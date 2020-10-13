@@ -1,29 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="Fr">
 
 
     <head>
         <meta charset="utf-8" />
-        <link rel="stylesheet" type="text/css" href="">
+        <link rel="stylesheet" type="text/css" href="style.css">
         <title>Réservia</title>
+        <script src="https://kit.fontawesome.com/c01dd6224b.js" crossorigin="anonymous"></script>
     </head>
 
 
     <body>
         
-        <div id="bloc page"></div>
+        <div id="bloc-page">
 
             <!--ici commence mon header-->
 
             <header>
 
                 <!-- ici il y aura mon titre RESERVIA et une partie nav "hebergements" "activitées" " s'inscrire" -->
-                <img src="Reservia@3x.png" alt="Réservia">
+                <img src="D:/openClassRoom/Projet2-Reservia/images-redi/reservia-3x.png" alt="Réservia">
                 <nav>
                     <ul>
-                        <li><a href="Hebergement">Hébergements</a></li>
-                        <li><a href="Activitées">Activitées</a></li>
-                        <li><a href=""></a> S'inscrire</li>
+                        <li><a href="#Hébergement">Hébergements</a></li>
+                        <li><a href="#Activités">Activitées</a></li>
+                        <li><a href="#">S'inscrire</a></li>
                     </ul>
                 </nav>
 
@@ -32,42 +33,130 @@
             <!--ici commence ma première div "Trouvez votre hébergement..." -->
 
             <div>
-                <title></title>
-                <p></p>
+                <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+                <p>En plein centre ville ou en pleine nature</p>
+                <i class="fas fa-map-marker-alt"></i><input type="text" name="ville">
+                <input type="submit" name="Rechercher" value="Rechercher">
+
             </div>
 
-            <!--ici commence ma seconde div "Filtres"-->
+            <!--ici commence ma seconde div "Filtres" il y aura une liste avec les différents boutons-->
 
             <div id="filtres">
+                <h1>Filtres</h1> 
+                
+                <ul>
+                    <li><i class="fas fa-money-bill-wave"></i><input type="submit" name="Economique" value="Economique"></li>
+                    <li><i class="fas fa-child"></i><input type="submit" name="Familial" value="Familial"></li>
+                    <li><i class="fas fa-heart"></i><input type="submit" name="Romantique" value="Romantique"></li>
+                    <li><i class="fas fa-dog"></i><input type="submit" name="Animaux" value="Animaux autorisés"></li>
+                </ul>
+                
+                <i class="fal fa-info-circle"></i><p>Plus de 500 logements sont disponibles dans cette ville</p>
 
             </div>
 
-            <!--ici commence ma première section "Hébergement"-->
+
+            <!--ici commence ma première section "Hébergement" il y aura une partie <article> et <aside>-->
 
             <section>
-                <article></article>
-                <aside></aside>
+                <h6>Les Résultats</h6>
+
+                <article>
+                    <h2 id="Hébergement">Hébergements à Marseille</h2>
+
+                   <!--premiere photo-->
+                   <div class="Cannebière"><a href="#"><em>Auberge la Cannebière </em><br>Nuit à partir de 25€ <br> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></a>
+                   </div>
+
+                   <!-- deuxième photo-->
+                   <div class="Port"><a href="#"><em>Hôtel du part </em><br>Nuit à partir de 52€ <br><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></a> 
+                   </div>
+
+                   <!-- troisième photo-->
+                   <div class="Mouettes"><a href="#"><em>Hôtel Les Mouettes </em><br>Nuit à partir de 76€ <br><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></a> 
+                   </div>
+
+                   <!--quatrième photo-->
+                   <div class="la mer"><a href="#"><em>Hôtel de la mer </em><br> Nuit à partir de 46€<br><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></a>
+                   </div>
+
+                   <!--cinquième photo-->
+                   <div class="Panier"><a href="#"><em>Auberge le Panier</em><br>Nuit à partir de 23€<br><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> </a>
+                   </div>
+
+                   <!--sixième photo-->
+                   <div class="Amina"><a href="#"><em>Hôtel chez Amina</em><br>Nuit à partir de 96€<br><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></a> 
+                   </div>
+
+                   <a href="#"><em>Affichez plus</em></a>
+                </article>
+
+                <!--fin de l'article-->
+
+                <!--début de l'aside-->
+
+                <aside>
+                    <h2> Les plus populaires</h2>
+
+                    <!--première photo-->
+                    <div class="soleil"><a href="#"><em>HôtelLe soleil du matin</em><br>Nuit à partir de 128€<br><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> </a>
+                    </div>
+
+                    <!--deuxième photo-->
+                    <div class="coeur"><a href="#"><em>Au coeur de l'eau Chambre d'hôtes</em><br>Nuit à partir de 71€<br><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> </a>
+                    </div>
+
+                    <!--troisième photo-->
+                    <div class="tout"><a href="#"><em>Hôtel tout bleu et blanc</em><br>Nuit à partir de 68€<br><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> </a>
+                    </div>
+                </aside>
             </section>
 
-            <!--ici fini ma première section-->
+            <!--ici fin de ma première section "Hébergements"-->
 
 
 
-            <!--ici commence ma seconde section "activitées"-->
+            <!--ici commence ma seconde section "activités"-->
 
-            <section></section>
+            <section id="Activités">
+            <h2>Activités à Marseille</h2>
+            <div class="Vieux"><a href="#"><em>Vieux Port</em></a></div>
+            <div class="Fort"><a href="#"><em>Fort de Pomègues</em></a></div>
+            <div class="iles"><a href="#"><em>Iles du Frioul</em></a></div>
+            <div class="Parc"><a href="#"><em>Parc National des Calanques</em></a></div>
+            <div class="Notre"><a href="#"><em>Notre-Dame-de-la-Garde</em></a></div>
+            <div class="Longchamp"><a href="#"><em>Parc Lomgchamp</em></a></div>
+            </section>
 
-
-            <!--ici fini ma seconde section-->
+            <!--ici fini ma seconde section "Activités" -->
 
             <!--ici commence mon footer-->
 
             <footer>
                 <!-- il y aura 3 div différentes "A propos" "Nos hébergements" "Assistance"-->
 
-                <div id="Apropos"></div>
-                <div id="Nos"></div>
-                <div id="Assistance"></div>
+                <div id="Apropos">
+                    <h3>A propos</h3>
+                    <ul><li><a href="#">Fonctionnement du site</a></li>
+                        <li><a href="#">Conditions générales de vente</a></li>
+                        <li><a href="#">Données et confidentialité</a></li>
+                    </ul>
+                </div>
+
+                <div id="Nos">
+                    <h3>Nos hébergements</h3>
+                    <ul><li><a href="#">Charte de qualité</a></li>
+                        <li><a href="#">Soumettre votre hôtel</a></li>
+                    </ul>
+                </div>
+                
+                <div id="Assistance">
+                    <h3>Assistance</h3>
+                    <ul><li><a href="#">Centre d'aide</a></li>
+                        <li><a href="#">Nous contacter</a></li>
+                    </ul>
+                </div>
             </footer>
 
         </div> 
