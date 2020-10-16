@@ -1,0 +1,128 @@
+/*je définis ma police*/
+@font-face
+{
+	font-family:"Raleway";
+	src:url('D:/openClassRoom/Projet2-Reservia/police/Raleway-VariableFont_wght.ttf') format('true-type');
+	
+	
+}
+
+/*je définis les styles pincipaux*/
+
+body
+{
+	font-family: "Raleway", Arial, sans-serif;
+	font-size: medium;
+	font-weight: 1.3em;
+	font-style: normal;
+}
+
+
+/*utiliser les média queries pour les écrans plus grand que 600px et 
+*il faudra utiliser des règles pour les écrans de mobiles càd plus petit que 600px  */
+/*Pour les écrans plus grand que 600px*/
+@media all and (min-width: 600px)and(max-width: 1280px)
+{
+	#bloc-page
+	{
+		margin: auto;
+		width: auto;
+	}
+}
+
+header
+{
+	width: 90%;
+	display: flex;
+	justify-content: space-between;
+}
+.img
+{
+
+}
+
+li
+{
+	list-style-type: none;
+}
+
+a
+{
+	text-decoration: none;
+	color:black;
+}
+
+nav ul 
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+nav li 
+{
+	margin:20px;
+
+}
+
+nav a:
+{
+	color: #0065FC;	
+	padding: 20px;
+}
+
+nav a:visited
+{
+	color: #4c2de7;
+
+}
+
+nav a:hover
+{
+	color: #0065FC;
+	border-top:2px #0065FC solid ; /*revoir les bordures pour les éloigner et revoir le a:visited*/
+}
+
+
+
+
+/*Div "trouvez votre hébergement"*/
+
+h2
+{
+	font-size: 1.3em;
+	margin: 2px 5px 2px 5px;
+}
+
+p
+{
+	margin-right: 15px;
+}
+
+/*section"Activités"*/
+.Activités
+{
+	display: flex;
+	
+}
+
+
+/*footer*/
+footer
+{
+	background-color: #F2F2F2;
+	display: flex;
+	justify-content: space-around;
+	color:black;
+}
+
+h3
+{
+	font-size: 1em;
+}
+
+
+
+
+
+
