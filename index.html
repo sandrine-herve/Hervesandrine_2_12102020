@@ -32,63 +32,69 @@
 
             <!--ici commence ma première div "Trouvez votre hébergement..." -->
 
-            <div>
+            <div class="Trouver">
                 <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
                 <p>En plein centre ville ou en pleine nature</p>
-                <i class="fas fa-map-marker-alt"></i><input type="text" name="ville">
-                <input type="submit" name="Rechercher" value="Rechercher">
+                <form><label><i class="fas fa-map-marker-alt"></i></label><input type="text" id="ville" name="ville">
+                <input type="submit" id="Rechercher" name="Rechercher" value="Rechercher"></form>
 
             </div>
+
+            <br>
 
             <!--ici commence ma seconde div "Filtres" il y aura une liste avec les différents boutons-->
 
             <div id="filtres">
                 <h1>Filtres</h1> 
-                <ul>
-                    <li><div class="money"><i class="fas fa-money-bill-wave"></i><a href="#">Economique</a></div></li>
-                    <li><div class="familial"><i class="fas fa-child"></i><a href="#">Familial</a></div></li>
-                    <li><div class="romantique"><i class="fas fa-heart"></i><a href="#">Romantique</a></div></li>   
-                    <li><div class="animaux"><i class="fas fa-dog"></i><a href="#">Animaux autorisés</a></div></li> 
+                <ul id="filter">
+                    <li><div class="money"><i class="fas fa-money-bill-wave" id="billet"></i><a href="#">Economique</a></div></li>
+                    <li><div class="familial"><i class="fas fa-child" id="enfant"></i><a href="#">Familial</a></div></li>
+                    <li><div class="romantique"><i class="fas fa-heart" id="coeur"></i><a href="#">Romantique</a></div></li>   
+                    <li><div class="animaux"><i class="fas fa-dog" id="chien"></i><a href="#">Animaux autorisés</a></div></li> 
                 </ul>
-                
-                <p><i class="fal fa-info-circle"></i>Plus de 500 logements sont disponibles dans cette ville</p>
-
             </div>
+                
+                <br><p><i class="fa fa-info-circle" aria-hidden="true"></i> Plus de 500 logements sont disponibles dans cette ville.</p>
 
-
-            <!--ici commence ma première section "Hébergement" il y aura une partie <article> et <aside>-->
+        <!--ici commence ma première section "Hébergement" il y aura une partie <article> et <aside>-->
 
             <section>
                 <h6>Les Résultats</h6>
-
                 <article>
-                    <h2 id="Hébergement">Hébergements à Marseille</h2>
-
+                     <h2 id="Hébergement">Hébergements à Marseille</h2>
+                
                    <!--premiere photo-->
-                   <div class="Cannebière"><a href="#"><em>Auberge la Cannebière </em><br>Nuit à partir de 25€ <br> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></a>
+                   <div id="art">
+                   <div class="Cannebière"><a href="#"><em>Auberge la Cannebière<br>Nuit à partir de 25€<br><span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                    <span class="grise"><i class="fas fa-star"></i></span></em></a>
                    </div>
 
                    <!-- deuxième photo-->
-                   <div class="Port"><a href="#"><em>Hôtel du part </em><br>Nuit à partir de 52€ <br><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></a> 
+                   <div class="Port"><a href="#"><em>Hôtel du port<br>Nuit à partir de 52€ <br><span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span></em></a>
                    </div>
 
                    <!-- troisième photo-->
-                   <div class="Mouettes"><a href="#"><em>Hôtel Les Mouettes </em><br>Nuit à partir de 76€ <br><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></a> 
+                   <div class="Mouettes"><a href="#"><em><strong> Hôtel Les Mouettes</strong><br>Nuit à partir de 76€ <br><span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                    <span class="grise"><i class="fas fa-star"></i></span></em></a>
                    </div>
 
                    <!--quatrième photo-->
-                   <div class="la mer"><a href="#"><em>Hôtel de la mer </em><br> Nuit à partir de 46€<br><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></a>
+                   <div class="la-mer"><a href="#"><em><strong>Hôtel de la mer</strong><br> Nuit à partir de 46€<br><span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                    <span class="grise"><i class="fas fa-star"></i><i class="fas fa-star"></i></span></em></a>
                    </div>
 
                    <!--cinquième photo-->
-                   <div class="Panier"><a href="#"><em>Auberge le Panier</em><br>Nuit à partir de 23€<br><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> </a>
+                   <div class="Panier"><a href="#"><em><strong> Auberge le Panier</strong><br>Nuit à partir de 23€<br><span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                    <span class="grise"><i class="fas fa-star"></i></span></em></a>
                    </div>
 
                    <!--sixième photo-->
-                   <div class="Amina"><a href="#"><em>Hôtel chez Amina</em><br>Nuit à partir de 96€<br><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></a> 
+                   <div class="Amina"><a href="#"><em><strong> Hôtel chez Amina</strong><br>Nuit à partir de 96€<br><span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span></em></a>
                    </div>
+               </div>
 
-                   <a href="#"><em>Affichez plus</em></a>
+                <br><a href="#">Affichez plus</a>
+
                 </article>
 
                 <!--fin de l'article-->
@@ -99,15 +105,15 @@
                     <h2> Les plus populaires</h2>
 
                     <!--première photo-->
-                    <div class="soleil"><a href="#"><em>HôtelLe soleil du matin</em><br>Nuit à partir de 128€<br><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> </a>
+                    <div class="soleil"><a href="#"><em><strong> Hôtel Le soleil du matin</strong><br>Nuit à partir de 128€<br><span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span> </em></a>
                     </div>
 
                     <!--deuxième photo-->
-                    <div class="coeur"><a href="#"><em>Au coeur de l'eau Chambre d'hôtes</em><br>Nuit à partir de 71€<br><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> </a>
+                    <div class="coeur"><a href="#"><em><strong> Au coeur de l'eau <br>Chambres d'hôtes</strong><br>Nuit à partir de 71€<br><span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span><span class="grise"><i class="fas fa-star"></i></span></em> </a>
                     </div>
 
                     <!--troisième photo-->
-                    <div class="tout"><a href="#"><em>Hôtel tout bleu et blanc</em><br>Nuit à partir de 68€<br><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> </a>
+                    <div class="tout"><a href="#"><em><strong>Hôtel tout bleu et blanc</strong><br>Nuit à partir de 68€<br><span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span><span class="grise"><i class="fas fa-star"></i></span></em> </a>
                     </div>
                 </aside>
             </section>
