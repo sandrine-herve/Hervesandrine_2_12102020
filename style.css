@@ -8,7 +8,6 @@
 }
 
 /*je définis les styles pincipaux*/
-
 body
 {
 	font-family: "Raleway", Arial, sans-serif;
@@ -36,10 +35,7 @@ header
 	display: flex;
 	justify-content: space-between;
 }
-.img
-{
 
-}
 
 li
 {
@@ -67,40 +63,339 @@ nav li
 
 nav a:
 {
-	color: #0065FC;	
 	padding: 20px;
+	color: #0065FC;	
 }
 
 nav a:visited
 {
-	color: #4c2de7;
+	color: #727274;
 
 }
 
 nav a:hover
 {
 	color: #0065FC;
-	border-top:2px #0065FC solid ; /*revoir les bordures pour les éloigner et revoir le a:visited*/
+	border-top:2px #0065FC solid ; /*revoir les bordures pour les éloigner*/
 }
 
 
 
 
-/*Div "trouvez votre hébergement"*/
+/*Div "trouver"*/
+
+form
+{
+  display: flex;
+  float: left;
+  width: 100px;
+}
+
+label
+{
+	border-radius: 3px 0px 0px 3px;
+	background-color: #F2F2F2;
+	padding: 5px 10px 5px 5px;
+}
+#ville
+{
+	padding: 5px 5px 5px 5px;
+
+}
+#Rechercher
+{
+	background-color: #0065FC;
+	color: white;
+	text-align: center;
+	border: none;
+	border-radius: 0px 5px 5px 0px;
+	padding: 5px 10px 5px 10px;
+}
 
 h2
 {
-	font-size: 1.3em;
-	margin: 2px 5px 2px 5px;
+	font-size: 1.2em
+}
+
+/*div "Filtres"*/
+h1
+{
+	font-size: 1em;
+	margin-top: 50px;
+	padding-left: 10px;
+
+}
+
+#filtres
+{
+	display: flex;
+	flex-direction: row;
+
+}
+
+#filter li
+{
+	float:left;
+	margin: 20px 20px 20px 20px;
+	padding: 0px 10px 0px 0px;
+	border: 2px #F2F2F2 solid;
+	border-radius: 20px 20px 20px 20px;
+}
+
+#billet
+{
+	margin-right: 10px;
+	padding: 10px 10px 10px 10px;
+	background-color: #DEEBFF;
+	border-radius:20px 20px 20px 20px;
+}
+
+#enfant
+{
+	margin-right: 10px;
+	padding: 10px 12px 10px 12px;
+	background-color: #DEEBFF;
+	border-radius: 20px 20px 20px 20px;
+
+}
+
+#coeur
+{
+	margin-right: 10px;
+	padding: 10px 10px 10px 10px;
+	background-color: #DEEBFF;
+	border-radius:20px 20px 20px 20px;
+
+}
+
+#chien
+{
+	margin-right: 10px;
+	padding: 10px 10px 10px 10px;
+	background-color: #DEEBFF;
+	border-radius:20px 20px 20px 20px;
 }
 
 p
 {
-	margin-right: 15px;
+	padding-top: 0px;
+	margin-top: 10px;
 }
 
+/*section "Hébergements"*/
+
+section
+{
+	display: flex;
+}
+
+h6
+{
+	display: none;
+}
+
+/*section "Hébergements" article*/
+article
+{
+	width: 60%;
+	height:500px;
+	border-radius: 10px 10px 10px 10px;
+	padding: 5px 5px 5px 5px;
+	margin: 10px 10px 10px 10px;
+	background-color: #F2F2F2;
+}
+
+
+#art
+{ 
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: baseline; 
+	align-content: space-around;
+}
+
+
+span
+{
+	color: #0065FC;
+}
+
+.grise
+{
+	color:#F2F2F2;
+}
+
+.Cannebière
+{
+	background-image: url(D:/openClassRoom/Projet2-Reservia/images-redi/marcus-loke-wqjvwu_hzfo-unspla.jpg);
+	background-repeat: no-repeat;
+	height: 75px;
+	width: 200px;
+	border: 3px white solid;
+	border-bottom: 60px white solid;
+	margin:10px 10px 10px 10px;
+	padding-bottom: 30px;
+	background-color: white;
+	border-radius: 10px 10px 10px 10px;
+
+}
+
+.Port
+{
+	background-image: url(D:/openClassRoom/Projet2-Reservia/images-redi/fred-kleber-gtbaxavlvsg-unspla.jpg);
+	background-repeat: no-repeat;
+	height: 75px;
+	width: 200px;
+	border: 3px white solid;
+	border-bottom: 60px white solid;
+	margin:10px 10px 10px 10px;
+	padding-bottom: 30px;
+	background-color: white;
+	border-radius: 10px 10px 10px 10px;
+}
+
+
+.Mouettes
+{
+    background-image: url(D:/openClassRoom/Projet2-Reservia/images-redi/reisetopia-b8wigxa_pfu-unsplas.jpg);
+    background-repeat: no-repeat;
+    height: 75px;
+	width: 200px;
+    border: 3px white solid;
+    border-bottom: 60px white solid;
+	margin:10px 10px 10px 10px;
+	padding-bottom: 30px;
+	background-color: white;
+	border-radius: 10px 10px 10px 10px;
+}
+
+.la-mer
+{
+    background-image: url(D:/openClassRoom/Projet2-Reservia/images-redi/annie-spratt-eg1qciitaua-unspl.jpg);
+    background-repeat: no-repeat;
+    height: 75px;
+	width: 200px;
+    border: 3px white solid;
+    border-bottom: 60px white solid;
+	margin:10px 10px 10px 10px;
+	padding-bottom: 30px;
+	background-color: white;
+	border-radius: 10px 10px 10px 10px;
+}
+
+.Panier
+{
+    background-image: url(D:/openClassRoom/Projet2-Reservia/images-redi/nicate-lee-kt-zyaiwbe0-unsplas.jpg);
+    background-repeat: no-repeat;
+    height: 75px;
+	width: 200px;
+	border: 3px white solid;
+	border-bottom: 60px white solid;
+	margin:10px 10px 10px 10px;
+	padding-bottom: 30px;
+	background-color: white;
+	border-radius: 10px 10px 10px 10px;
+
+}
+
+.Amina
+{
+    background-image: url(D:/openClassRoom/Projet2-Reservia/images-redi/febrian-zakaria-m6s1wvfw68a-un.jpg);
+    background-repeat: no-repeat;
+    height: 75px;
+	width: 200px;
+    border: 3px white solid;
+    border-bottom: 60px white solid;
+	margin:10px 10px 10px 10px;
+	padding-bottom: 30px;
+	background-color: white;
+	border-radius: 10px 10px 10px 10px;
+}
+
+article em
+{
+	position: relative;
+	bottom: -105px;
+}
+
+/*section "Hébergements" aside*/
+
+aside
+{
+	width: 30%;
+	height:500px;
+	border-radius: 10px 10px 10px 10px;
+	padding: 5px 5px 5px 5px;
+	margin: 20px 20px 20px 20px;
+	background-color: #F2F2F2;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.soleil
+{
+    background-image: url(D:/openClassRoom/Projet2-Reservia/images-redi/soleil.jpg);
+    background-repeat: no-repeat;
+    height:100px; 
+    width:350px;
+    border: 3px white solid;
+	margin:10px 10px 10px 10px;
+	background-color: white;
+	border-radius: 10px 10px 10px 10px;
+}
+
+.coeur
+{
+	background-image: url(D:/openClassRoom/Projet2-Reservia/images-redi/coeur.jpg);
+    background-repeat: no-repeat;
+    height:100px;
+    width:350px;
+    border: 3px white solid;
+	margin:10px 10px 10px 10px;
+	background-color: white;
+	border-radius: 10px 10px 10px 10px;
+
+}
+
+.tout
+{
+	background-image: url(D:/openClassRoom/Projet2-Reservia/images-redi/tout.jpg);
+    background-repeat: no-repeat;
+    height:100px; 
+    width:350px;
+    border: 3px white solid;
+	margin:10px 10px 10px 10px;
+	background-color: white;
+	border-radius: 10px 10px 10px 10px;
+
+}
+
+aside em
+{
+	position: relative;
+	left: 155px;
+}
+
+em 
+{
+	font-size: 0.8em;
+}
+
+strong
+{
+	font-weight: bold;
+}
+
+
+
+
+
+
 /*section"Activités"*/
-.Activités
+#Activités
 {
 	display: flex;
 	
