@@ -2,7 +2,7 @@
 @font-face
 {
 	font-family:"Raleway";
-	src:url('D:/openClassRoom/Projet2-Reservia/police/Raleway-VariableFont_wght.ttf') format('true-type');
+	src:url('D:/openClassRoom/Projet2-Reservia/police/Raleway-VariableFont_wght.ttf')format('true-type');
 	
 	
 }
@@ -11,9 +11,18 @@
 body
 {
 	font-family: "Raleway", Arial, sans-serif;
-	font-size: medium;
-	font-weight: 1.3em;
+	font-size: small;
 	font-style: normal;
+}
+
+em
+{
+	font-style: normal;
+}
+
+strong
+{
+	font-weight: bold;
 }
 
 
@@ -22,11 +31,9 @@ body
 /*Pour les écrans plus grand que 600px*/
 @media all and (min-width: 600px)and(max-width: 1280px)
 {
-	#bloc-page
-	{
+	#bloc-page{
 		margin: auto;
-		width: auto;
-	}
+		width: auto;}
 }
 
 header
@@ -114,7 +121,7 @@ label
 
 h2
 {
-	font-size: 1.2em
+	font-size: 1.2em;
 }
 
 /*div "Filtres"*/
@@ -186,7 +193,8 @@ p
 
 section
 {
-	display: flex;
+	display: inline-flex;
+	flex-direction: row;
 }
 
 h6
@@ -195,13 +203,17 @@ h6
 }
 
 /*section "Hébergements" article*/
+#Hébergement
+{
+	margin-left: 20px;
+}
 article
 {
 	width: 60%;
-	height:500px;
+	height:475px;
 	border-radius: 10px 10px 10px 10px;
 	padding: 5px 5px 5px 5px;
-	margin: 10px 10px 10px 10px;
+	margin: 15px 15px 15px 15px;
 	background-color: #F2F2F2;
 }
 
@@ -212,7 +224,6 @@ article
 	flex-wrap: wrap;
 	flex-direction: row;
 	justify-content: space-around;
-	align-items: baseline; 
 	align-content: space-around;
 }
 
@@ -235,10 +246,11 @@ span
 	width: 200px;
 	border: 3px white solid;
 	border-bottom: 60px white solid;
-	margin:10px 10px 10px 10px;
+	margin:20px 15px 15px 15px;
 	padding-bottom: 30px;
 	background-color: white;
 	border-radius: 10px 10px 10px 10px;
+	box-shadow: 5px 5px 5px #d9d9d9;
 
 }
 
@@ -250,10 +262,11 @@ span
 	width: 200px;
 	border: 3px white solid;
 	border-bottom: 60px white solid;
-	margin:10px 10px 10px 10px;
+	margin:20px 15px 15px 15px;
 	padding-bottom: 30px;
 	background-color: white;
 	border-radius: 10px 10px 10px 10px;
+	box-shadow: 5px 5px 5px #d9d9d9;
 }
 
 
@@ -265,10 +278,11 @@ span
 	width: 200px;
     border: 3px white solid;
     border-bottom: 60px white solid;
-	margin:10px 10px 10px 10px;
+	margin:20px 15px 15px 15px;
 	padding-bottom: 30px;
 	background-color: white;
 	border-radius: 10px 10px 10px 10px;
+	box-shadow: 5px 5px 5px #d9d9d9;
 }
 
 .la-mer
@@ -283,6 +297,7 @@ span
 	padding-bottom: 30px;
 	background-color: white;
 	border-radius: 10px 10px 10px 10px;
+	box-shadow: 5px 5px 5px #d9d9d9;
 }
 
 .Panier
@@ -297,6 +312,7 @@ span
 	padding-bottom: 30px;
 	background-color: white;
 	border-radius: 10px 10px 10px 10px;
+	box-shadow: 5px 5px 5px #d9d9d9;
 
 }
 
@@ -312,6 +328,7 @@ span
 	padding-bottom: 30px;
 	background-color: white;
 	border-radius: 10px 10px 10px 10px;
+	box-shadow: 5px 5px 5px #d9d9d9;
 }
 
 article em
@@ -322,17 +339,31 @@ article em
 
 /*section "Hébergements" aside*/
 
+#graphique
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+#graph
+{
+	padding: 15px 10px 10px 10px;
+}
+
 aside
 {
 	width: 30%;
-	height:500px;
+	height:475px;
 	border-radius: 10px 10px 10px 10px;
 	padding: 5px 5px 5px 5px;
-	margin: 20px 20px 20px 20px;
+	margin: 15px 15px 15px 15px;
 	background-color: #F2F2F2;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
+	justify-content: space-between;
 }
 
 .soleil
@@ -342,9 +373,10 @@ aside
     height:100px; 
     width:350px;
     border: 3px white solid;
-	margin:10px 10px 10px 10px;
+	margin:0px 10px 10px 10px;
 	background-color: white;
 	border-radius: 10px 10px 10px 10px;
+	box-shadow: 5px 5px 5px #d9d9d9;
 }
 
 .coeur
@@ -357,6 +389,7 @@ aside
 	margin:10px 10px 10px 10px;
 	background-color: white;
 	border-radius: 10px 10px 10px 10px;
+	box-shadow: 5px 5px 5px #d9d9d9;
 
 }
 
@@ -370,6 +403,7 @@ aside
 	margin:10px 10px 10px 10px;
 	background-color: white;
 	border-radius: 10px 10px 10px 10px;
+	box-shadow: 5px 5px 5px #d9d9d9;
 
 }
 
@@ -379,13 +413,13 @@ aside em
 	left: 155px;
 }
 
-em 
-{
-	font-size: 0.8em;
-}
 
-strong
+
+
+#Afficher
 {
+	margin-left: 15px;
+	padding-left: 15px;
 	font-weight: bold;
 }
 
@@ -395,20 +429,178 @@ strong
 
 
 /*section"Activités"*/
-#Activités
+
+.actMarseille
 {
+	width: 100%;
+	height: 500px;
 	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+
+#premiere
+{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+}
+
+#seconde
+{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+}
+
+.Vieux
+{
+    background-image: url();
+    background-repeat: no-repeat;
+    height:425px; 
+    width:275px;
+    border-bottom: 25px white solid;
+	margin:15px 15px 15px 15px;
+	background-color: white;
+	border-radius: 10px 10px 10px 10px;
+	box-shadow: 0px 5px 5px 0px #F2F2F2;
+}
+
+.Vieux em
+{
+	position: relative;
+	bottom: 0px;
+	left: 10px;
+}
+
+.Fort
+{
+	background-image: url();
+    background-repeat: no-repeat;
+    height:280px; 
+    width:275px;
+    border-bottom: 25px white solid;
+	margin:15px 15px 15px 15px;
+	background-color: white;
+	border-radius: 10px 10px 10px 10px;
+	box-shadow: 0px 5px 5px 0px #F2F2F2;
+}
+
+.Fort em
+{
+	position: relative;
+	bottom: 0px;
+	left: 10px;
+}
+
+.iles
+{
+	background-image: url();
+    background-repeat: no-repeat;
+    height:90px; 
+    width:275px;
+    border-bottom: 25px white solid;
+    margin:15px 15px 15px 15px;
+	background-color: white;
+	border-radius: 10px 10px 10px 10px;
+	box-shadow: 0px 5px 5px 0px #F2F2F2;
+}
+
+.iles em
+{
+	position: relative;
+	bottom: 0px;
+	left: 10px;
+}
+
+.Parc
+{
+	background-image: url();
+    background-repeat: no-repeat;
+    height:425px; 
+    width:275px;
+    border-bottom: 25px white solid;
+	margin:15px 15px 15px 15px;
+	background-color: white;
+	border-radius: 10px 10px 10px 10px;
+	box-shadow: 0px 5px 5px 0px #F2F2F2;
+}
+
+.Parc em
+{
+	position: relative;
+	bottom: 0px;
+	left: 10px;
+}
 	
+
+.Notre
+{
+	background-image: url();
+    background-repeat: no-repeat;
+    height:200px; 
+    width:275px;
+    border-bottom: 25px white solid;
+	margin:15px 15px 15px 15px;
+	background-color: white;
+	border-radius: 10px 10px 10px 10px;
+	box-shadow: 0px 5px 5px 0px #F2F2F2;
+}
+
+.Notre em
+{
+	position: relative;
+	bottom: 0px;
+	left: 10px;
+}
+
+.Longchamp
+{
+	background-image: url();
+    background-repeat: no-repeat;
+    height:200px; 
+    width:275px;
+    border-bottom: 25px white solid;
+	margin:15px 15px 15px 15px;
+	background-color: white;
+	border-radius: 10px 10px 10px 10px;
+	box-shadow: 0px 5px 5px 0px #F2F2F2;
+}
+
+.Longchamp em
+{
+	position: relative;
+	bottom:0px;
+	left: 10px;
 }
 
 
 /*footer*/
 footer
 {
-	background-color: #F2F2F2;
 	display: flex;
+	flex-direction: row;
 	justify-content: space-around;
-	color:black;
+	width:90%;
+	background-color: #F2F2F2;
+
+}
+
+#Apropos
+{
+	display: inline-block;
+	text-align: left;
+}
+
+#Nos
+{
+   
+}
+
+#Assistance
+{
+    
 }
 
 h3
