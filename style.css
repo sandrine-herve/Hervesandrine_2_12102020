@@ -15,7 +15,7 @@ body
 
 em
 {
-	font-style: normal;
+	font-weight: large;
 }
 
 strong
@@ -25,7 +25,7 @@ strong
 
 
 
-/* Début de la version desktop 	max 1024px*/
+/* Début de la version desktop 	min 1135px*/
 
 header
 {
@@ -81,15 +81,22 @@ nav a:hover
 
 }
 
-
-
 /*Div "trouver"*/
+.Trouver h2 
+{  
+     font-size: 1.5em;
+}
+.Trouver .fas
+{
+	position:relative;
+	bottom: -5px;
+	left: 2px;
+}
 
 form
-{
-  display: flex;
-  float: left;
-  width: 100px;
+{ 
+    display: flex;
+    float: left;
 }
 
 label
@@ -100,7 +107,8 @@ label
 }
 #ville
 {
-	padding: 5px 5px 5px 5px;
+	width: 220px;
+	padding: 10px 10px 10px 10px;
 
 }
 #Rechercher
@@ -110,7 +118,7 @@ label
 	text-align: center;
 	border: none;
 	border-radius: 0px 5px 5px 0px;
-	padding: 5px 10px 5px 10px;
+	padding: 10px 20px 10px 20px;
 }
 
 h2
@@ -130,16 +138,17 @@ h1
 	margin-top: 50px;
 	padding-left: 10px;
 	text-indent: -7em;
-
 }
 
 #filtres
 {
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-
 }
+
+#filter
+{
+	display: flex;
+}
+
 
 #filter li
 {
@@ -153,6 +162,12 @@ h1
 #filter .fas
 {
 	color:#0065FC;
+}
+
+#filter a
+{
+	font-weight: bold;
+	font-size: 1em;
 }
 
 #filter a:hover
@@ -223,12 +238,13 @@ h6
 {
 	margin-left: 20px;
 }
+
 article
 {
-	width: auto;
+	width: 75%;
 	height:auto;
 	border-radius: 10px 10px 10px 10px;
-	padding:10px 10px 10px 10px ;
+	padding:20px 20px 20px 20px ;
 	margin:10px 40px 10px 10px;
 	background-color: #F2F2F2;
 }
@@ -243,7 +259,7 @@ article
 
 #art
 {
-    width: auto;
+    width: 100%;
     height: auto;
 	display: flex;
 	flex-direction: row;
@@ -263,125 +279,22 @@ span
 	color:#F2F2F2;
 }
 
-.Cannebiere
+.resultat
 {
 	height: 75px;
-	width: 200px;
+	width: 210px;
 	border: 3px white solid;
 	border-bottom: 50px white solid;
-	margin:25px 5px 5px 5px;
+	margin:25px 10px 5px 5px;
 	padding-bottom: 30px;
 	border-radius: 10px 10px 10px 10px;
 	box-shadow: 5px 5px 5px #d9d9d9;
 }
 
-#cannebiere
+#result
 {
 	height:100px; 
-    width:200px;
-    object-fit: cover;
-    border-radius: 10px 10px 0px 0px;
-}
-
-.Port 
-{
-	height: 75px;
-	width: 200px;
-	border: 3px white solid;
-	border-bottom: 50px white solid;
-	margin:25px 5px 5px 5px;
-	padding-bottom: 30px;
-	border-radius: 10px 10px 10px 10px;
-	box-shadow: 5px 5px 5px #d9d9d9;
-}
-
-#port
-{
-	height:100px; 
-    width:200px;
-    object-fit: cover;
-    border-radius: 10px 10px 0px 0px;
-}
-
-
-.Mouettes
-{
-    height: 75px;
-	width: 200px;
-    border: 3px white solid;
-    border-bottom: 50px white solid;
-    margin:25px 5px 5px 5px;
-	padding-bottom: 30px;
-	border-radius: 10px 10px 10px 10px;
-	box-shadow: 5px 5px 5px #d9d9d9;
-}
-
-#mouettes
-{
-	height:100px; 
-    width:200px;
-    object-fit: cover;
-    border-radius: 10px 10px 0px 0px;
-}
-
-.la-mer
-{
-    height: 75px;
-	width: 200px;
-    border: 3px white solid;
-    border-bottom: 50px white solid;
-    margin:25px 5px 5px 5px;
-	padding-bottom: 30px;
-
-	border-radius: 10px 10px 10px 10px;
-	box-shadow: 5px 5px 5px #d9d9d9;
-}
-
-#mer
-{
-	height:100px; 
-    width:200px;
-    object-fit: cover;
-    border-radius: 10px 10px 0px 0px;
-}
-
-.Panier
-{
-    
-    height: 75px;
-	width: 200px;
-	border: 3px white solid;
-	border-bottom: 50px white solid;
-	margin:25px 5px 5px 5px;
-	padding-bottom: 30px;
-	border-radius: 10px 10px 10px 10px;
-	box-shadow: 5px 5px 5px #d9d9d9;
-}
-
-#panier
-{
-	height:100px; 
-    width:200px;
-    object-fit: cover;
-    border-radius: 10px 10px 0px 0px;
-}
-
-.Amina
-{
-    height: 75px;
-	width: 200px;
-    border: 3px white solid;
-    border-bottom: 50px white solid;
-    margin:25px 5px 5px 5px;
-	padding-bottom: 30px;
-	border-radius: 10px 10px 10px 10px;
-	box-shadow: 5px 5px 5px #d9d9d9;
-}
-
-#amina
-{
-	height:100px; 
-    width:200px;
+    width:100%;
     object-fit: cover;
     border-radius: 10px 10px 0px 0px;
 }
@@ -416,18 +329,19 @@ article .fas
 
 aside
 {
-	width: 150px;
-	height:450px;
+	width: 30%;
+	height:auto;
 	border-radius: 10px 10px 10px 10px;
 	padding:0px 10px 20px 10px ;
-	margin:10px 30px 15px 10px;
+	margin:10px 30px 10px 10px;
 	background-color: #F2F2F2;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	align-items: center;
 }
 
-.soleil
+.populaire
 {
     height:100px; 
     width:252px;
@@ -438,7 +352,7 @@ aside
 	box-shadow: 5px 5px 5px #d9d9d9; 
 }
 
-#soleil
+#popular
 {
 	height:100px; 
     width:100px;
@@ -446,79 +360,12 @@ aside
     border-radius: 10px 0px 0px 10px;
 }
 
-.soleil em
+.populaire em
 {
 	float: right;
 }
 
-.soleil .fas
-{
-	position: relative;
-	bottom: -50px;
-}
 
-.coeur
-{
-    height:100px;
-    width:252px;
-    border: 3px white solid;
-    background-color: white;
-    padding-right: 5px;
-	border-radius: 10px 10px 10px 10px;
-	box-shadow: 5px 5px 5px #d9d9d9;
-}
-
-#eau
-{
-	height:100px; 
-    width:100px;
-    object-fit: cover;
-    border-radius: 10px 0px 0px 10px;
-}
-
-.coeur em
-{
-	float: right;
-	position: relative;
-	right:27px;
-
-}
-
-.coeur .fas
-{
-	position: relative;
-	bottom: -35px;
-}
-
-.tout
-{
-    height:100px; 
-    width:250px;
-    padding-right: 5px;
-    border: 3px white solid;
-    background-color: white;
-	border-radius: 10px 10px 10px 10px;
-	box-shadow: 5px 5px 5px #d9d9d9;
-}
-
-#tout
-{
-	height:100px; 
-    width:100px;
-    object-fit: cover;
-    border-radius: 10px 0px 0px 10px;
-}
-
-.tout em
-{
-	float: right;
-}
-
-.tout .fas
-{
-	position: relative;
-	bottom: -50px;
-}
 
 /*section"Activités"*/
 
@@ -536,7 +383,7 @@ aside
 
 #premiere
 {
-	width: 200px;
+	width: 250px;
 	display: flex;
 	flex-direction: column;
 	margin: 10px 10px 10px 10px;
@@ -545,7 +392,7 @@ aside
 
 #seconde
 {
-	width: 200px;
+	width: 250px;
 	display: flex;
 	flex-direction: column;
 	margin: 10px 10px 10px 10px;
@@ -553,26 +400,51 @@ aside
 
 }
 
-.Vieux
+.grande
 {
     height:400px; 
-    width:200px;
+    width:250px;
     border-bottom: 40px white solid;
 	margin:10px 10px 10px 10px;
 	border-radius: 10px 10px 10px 10px;
 	box-shadow: 0px 5px 5px 0px #F2F2F2;
 }
 
-#vieux
+#big
 {
 	height:400px; 
-    width:200px;
+    width:100%;
     object-fit: cover; 
     border-radius: 10px 10px 0px 0px;
 
 }
 
-.Vieux em
+.grande em
+{
+	position: relative;
+	bottom: 0px;
+	left: 10px;
+}
+
+.petite
+{
+    height:160px; 
+    width:250px;
+    border-bottom: 40px white solid;
+	margin-bottom: 40px;
+	border-radius: 10px 10px 10px 10px;
+	box-shadow: 0px 5px 5px 0px #F2F2F2;
+}
+
+#small
+{
+	height:165px; 
+    width:100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0px 0px; 
+}
+
+.petite em
 {
 	position: relative;
 	bottom: 0px;
@@ -580,11 +452,11 @@ aside
 }
 
 .Fort
-{
-    height:195px; 
-    width:200px;
+{ 
+	height:195px; 
+    width:250px;
     border-bottom: 40px white solid;
-	margin:0px 20px 10px 0px;
+	margin-bottom: 20px;
 	border-radius: 10px 10px 10px 10px;
 	box-shadow: 0px 5px 5px 0px #F2F2F2;
 }
@@ -592,7 +464,7 @@ aside
 #fort
 {
 	height:195px; 
-    width:200px;
+    width:100%;
     object-fit: cover;
     border-radius: 10px 10px 0px 0px; 
 }
@@ -602,109 +474,33 @@ aside
 	position: relative;
 	bottom: 0px;
 	left: 10px;
+
 }
 
-.iles
-{
-    height:145px; 
-    width:200px;
+.Frioul
+{   
+	height:120px; 
+    width:250px;
     border-bottom: 40px white solid;
-    margin:10px 20px 10px 0px;
+	margin-top: 20px;
 	border-radius: 10px 10px 10px 10px;
 	box-shadow: 0px 5px 5px 0px #F2F2F2;
 }
 
 #frioul
 {
-	height:145px; 
-    width:200px;
-    object-fit: cover; 
-    border-radius: 10px 10px 0px 0px;
+	height:120px; 
+    width:100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0px 0px; 
 }
 
-.iles em
+.Frioul em
 {
 	position: relative;
 	bottom: 0px;
 	left: 10px;
 }
-
-.Parc
-{
-    height:400px; 
-    width:200px;
-    border-bottom: 40px white solid;
-	margin:10px 10px 10px 10px;
-	border-radius: 10px 10px 10px 10px;
-	box-shadow: 0px 5px 5px 0px #F2F2F2;
-}
-
-#parc
-{
-	height:400px; 
-    width:200px;
-    object-fit: cover; 
-    border-radius: 10px 10px 0px 0px;
-}
-
-.Parc em
-{
-	position: relative;
-	bottom: 0px;
-	left: 10px;
-}
-	
-
-.Notre
-{
-    height:170px; 
-    width:200px;
-    border-bottom: 40px white solid;
-	margin:0px 10px 10px 10px;
-	border-radius: 10px 10px 10px 10px;
-	box-shadow: 0px 5px 5px 0px #F2F2F2;
-}
-
-#notre
-{
-	height:170px; 
-    width:200px;
-    object-fit: cover; 
-    border-radius: 10px 10px 0px 0px;
-}
-
-.Notre em
-{
-	position: relative;
-	bottom: 0px;
-	left: 10px;
-}
-
-.Longchamp
-{
-    height:170px; 
-    width:200px;
-    border-bottom: 40px white solid;
-	margin:10px 10px 10px 10px;
-	border-radius: 10px 10px 10px 10px;
-	box-shadow: 0px 5px 5px 0px #F2F2F2;
-}
-
-#longchamp
-{
-	height:170px; 
-    width:200px;
-    object-fit: cover; 
-    border-radius: 10px 10px 0px 0px;
-}
-
-.Longchamp em
-{
-	position: relative;
-	bottom:0px;
-	left: 10px;
-}
-
 
 /*footer*/
 footer
@@ -752,6 +548,7 @@ h3
 		height: 150px;
 		margin: 10px 10px 10px 10px;
 	}
+
 	#soleil 
 	{
 		width: 40%;
