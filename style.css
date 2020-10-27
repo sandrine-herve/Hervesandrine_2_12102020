@@ -283,7 +283,7 @@ span
     border-radius: 10px 10px 0px 0px;
 }
 
-.Port
+.Port 
 {
 	height: 75px;
 	width: 200px;
@@ -386,8 +386,6 @@ span
     border-radius: 10px 10px 0px 0px;
 }
 
-
-
 article em
 {
 	display: block;
@@ -418,7 +416,7 @@ article .fas
 
 aside
 {
-	width: 30%;
+	width: 150px;
 	height:450px;
 	border-radius: 10px 10px 10px 10px;
 	padding:0px 10px 20px 10px ;
@@ -730,23 +728,280 @@ h3
 
 /*fin de la partie Desktop*/
 
-/*début de la partie iphone =>(max-width: 375px)*/
-@media handheld(max-width: 375px)
+/*début de la partie smartphone =>(max-width: 320px-600px)*/
+@media screen and (max-width: 600px)
 {
 	section
 	{
-		background-color: red;
+		flex-direction: column-reverse;
+		margin: 20px 20px 20px 20px;
 	}
 	aside
 	{
+		display: flex;
+		flex-direction:column;
+		justify-content: space-around; 
+		width: 90%;
+		height: 550px;
+		background-color: #F2F2F2;
+	}
+
+	.soleil 
+	{
+		width: 90%;
+		height: 150px;
+		margin: 10px 10px 10px 10px;
+	}
+	#soleil 
+	{
+		width: 40%;
+		height: 100%;
+	}
+
+	.soleil  em .fas
+	{
+		float: left;
+	}
+
+	.coeur
+	{
+	    width: 90%;
+		height: 150px;
+		margin: 10px 10px 10px 10px;	
+	}
+
+	#eau
+	{
+		width: 40%;
+		height: 100%;
+	}
+
+	.coeur em .fas
+	{
+		float: left;
+	}
+
+	.tout
+	{
+		width: 90%;
+		height: 150px;
+		margin: 10px 10px 10px 10px;
+	}
+
+	#tout
+	{
+		width: 40%;
+		height: 100%;
+	}
+
+	.tout em .fas
+	{
+		float: left;
+	}
+
+	article
+	{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		width: 90%;
+		background-color: white;
+	}
+
+	.Cannebiere
+	{
+		width: 100%;
+		height: 120px;
+		margin: 10px 10px 10px 10px;
+	}
+
+	#cannebiere
+	{
+		width: 100%;
+		height: 130px;
 
 	}
 
-}
+	.Port
+	{
+		width:100%;
+		height: 120px;
+		margin: 10px 10px 10px 10px;
+	}
 
+	#port
+	{
+        width:100%;
+        height: 120px;
+	}
+
+	.Mouettes
+	{
+        width:100%;
+        height: 120px;
+        margin: 10px 10px 10px 10px;
+	}
+
+	#mouettes
+	{
+		width:100%;
+		height: 120px;
+	}
+
+	.la-mer
+	{
+		width:100%;
+		height: 120px;
+		margin: 10px 10px 10px 10px;
+	}
+
+	#mer
+	{
+		width:100%;
+		height: 120px;
+	}
+
+	.Panier
+	{
+		width:100%;
+		height: 120px;
+		margin: 10px 10px 10px 10px;
+	}
+
+	#panier
+	{
+		width:100%;
+		height: 120px;
+	}
+
+	.Amina
+	{
+		width:100%;
+		height: 120px;
+		margin: 10px 10px 10px 10px;
+	}
+
+	#amina
+	{
+		width:100%;
+		height: 120px;
+	}
+
+	#Afficher
+	{
+		margin: 10px 10px 10px 10px;
+		font-weight: bold;
+	}
+
+	#act
+	{
+		margin-left: 40px;
+	}
+
+	.actMarseille
+	{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		width: 100%;
+		height: 1300px;
+		background-color: red;
+	}
+
+	#premiere
+	{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	#seconde
+	{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	.Vieux
+	{
+		width:90%;
+		height: 120px;
+	}
+
+	#vieux
+	{
+		width:100%;
+		height: 120px;
+	}
+
+	.Fort
+	{
+		width:160%;
+		height: 120px;
+	}
+
+	#fort
+	{
+		width:100%;
+		height: 120px;
+	}
+
+	.iles
+	{
+		width:160%;
+		height: 120px;
+	}
+
+	#frioul
+	{
+		width:100%;
+		height: 120px;
+	}
+
+	.Parc
+	{
+		width:90%;
+		height: 120px;
+	}
+
+	#parc
+	{
+		width:100%;
+		height: 120px;
+	}
+
+	.Notre
+	{
+		width:160%;
+		height: 120px;
+	}
+
+	#notre
+	{
+		width:100%;
+		height: 120px;
+	}
+
+	.Longchamp
+	{
+		width:160%;
+		height: 120px;
+	}
+
+	#longchamp
+	{
+		width:100%;
+		height: 120px;
+	}
+
+
+}
 /*fin de la partie iphone*/
 
-/*début de la partie tablette =>(min-width: 768px) and (max-width: 979px)*/
+/*début de la partie tablette =>(min-width: 600px) and (max-width: 1024px)*/
 /*fin de la partie tablette*/
 
 
