@@ -63,6 +63,11 @@ nav a
 	padding:20px;
 }
 
+nav a:visited
+{
+	font-weight: bold;
+	color: #0065FC;
+}
 
 nav a:hover
 {
@@ -85,6 +90,12 @@ nav a:hover
 .Trouver h2 
 {  
      font-size: 1.5em;
+     padding-left: 20px;
+}
+
+.Trouver p
+{
+	padding-left: 20px;
 }
 .Trouver .fas
 {
@@ -97,6 +108,7 @@ form
 { 
     display: flex;
     float: left;
+    padding-left: 40px;
 }
 
 label
@@ -132,29 +144,29 @@ input
 }
 
 /*div "Filtres"*/
-h1
+.filtres h1
 {
-	font-size: 1em;
-	margin-top: 50px;
-	padding-left: 10px;
-	text-indent: -7em;
+	font-size: 1.2em;
+	margin-top: 40px;
+	padding-left: 20px;
 }
 
-#filtres
+.filtres
 {
-}
-
-#filter
-{
+	width: 100%;
 	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
 }
 
 
 #filter li
 {
+	width: auto;
+	font-weight: bold;
 	float:left;
-	margin: 20px 20px 20px 20px;
-	padding: 0px 10px 0px 0px;
+	margin: 20px 20px 20px 10px;
+	padding: 0px 20px 0px 0px;
 	border: 2px #F2F2F2 solid;
 	border-radius: 20px 20px 20px 20px;
 }
@@ -183,7 +195,7 @@ p .fa
 #billet
 {
 	margin-right: 10px;
-	padding: 10px 10px 10px 10px;
+	padding: 10px 15px 15px 12px;
 	background-color: #DEEBFF;
 	border-radius:20px 20px 20px 20px;
 }
@@ -191,7 +203,7 @@ p .fa
 #enfant
 {
 	margin-right: 10px;
-	padding: 10px 12px 10px 12px;
+	padding: 10px 15px 15px 12px;
 	background-color: #DEEBFF;
 	border-radius: 20px 20px 20px 20px;
 
@@ -200,7 +212,7 @@ p .fa
 #coeur
 {
 	margin-right: 10px;
-	padding: 10px 10px 10px 10px;
+	padding: 10px 15px 15px 10px;
 	background-color: #DEEBFF;
 	border-radius:20px 20px 20px 20px;
 }
@@ -208,7 +220,7 @@ p .fa
 #chien
 {
 	margin-right: 10px;
-	padding: 10px 10px 10px 10px;
+	padding: 10px 15px 15px 10px;
 	background-color: #DEEBFF;
 	border-radius:20px 20px 20px 20px;
 }
@@ -314,17 +326,18 @@ article .fas
 
 #graphique
 {
+	width:100%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	margin-left: 20px;
-	margin-right: 20px;
-	margin-top: 15px;
+	margin: 20px 20px 20px 20px;
+	padding-left: 20px;
 }
 
 #graph
 {
 	padding: 15px 10px 10px 10px;
+	font-size: 1.2em;
 }
 
 aside
@@ -383,7 +396,7 @@ aside
 
 #premiere
 {
-	width: 250px;
+	width: 25%;
 	display: flex;
 	flex-direction: column;
 	margin: 10px 10px 10px 10px;
@@ -392,7 +405,7 @@ aside
 
 #seconde
 {
-	width: 250px;
+	width: 25%;
 	display: flex;
 	flex-direction: column;
 	margin: 10px 10px 10px 10px;
@@ -403,7 +416,7 @@ aside
 .grande
 {
     height:400px; 
-    width:250px;
+    width:25%;
     border-bottom: 40px white solid;
 	margin:10px 10px 10px 10px;
 	border-radius: 10px 10px 10px 10px;
@@ -429,7 +442,7 @@ aside
 .petite
 {
     height:160px; 
-    width:250px;
+    width:100%;
     border-bottom: 40px white solid;
 	margin-bottom: 40px;
 	border-radius: 10px 10px 10px 10px;
@@ -454,7 +467,7 @@ aside
 .Fort
 { 
 	height:195px; 
-    width:250px;
+    width:100%;
     border-bottom: 40px white solid;
 	margin-bottom: 20px;
 	border-radius: 10px 10px 10px 10px;
@@ -480,7 +493,7 @@ aside
 .Frioul
 {   
 	height:120px; 
-    width:250px;
+    width:100%;
     border-bottom: 40px white solid;
 	margin-top: 20px;
 	border-radius: 10px 10px 10px 10px;
@@ -505,19 +518,25 @@ aside
 /*footer*/
 footer
 {
-	width: 100%;
-	display: flex;
+	width:100%;
+	display:flex;
 	flex-direction: row;
 	justify-content: space-around;
+	align-content: flex-start;
 	background-color: #F2F2F2;
-	padding: 15px 50px 15px 15px;
-	margin: 15px 50px 15px 15px;
-	text-indent: -15em;
+	margin-top: 30px;
+	text-indent: -15em ;
 }
 
 h3
 {
 	font-size: 1em;
+}
+
+footer li
+{
+	padding-bottom: 5px; 
+	padding-top:5px;
 }
 
 
