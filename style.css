@@ -72,7 +72,7 @@ nav a:visited
 nav a:hover
 {
 	color: #0065FC;
-	border-top:2px #0065FC solid ;
+	border-top: 2px #0065FC solid;
 }
 
 /* logo reservia*/
@@ -133,6 +133,11 @@ label
 	padding: 10px 20px 10px 20px;
 }
 
+.Trouver .fa
+{
+	display:none;
+}
+
 h2
 {
 	font-size: 1.2em;
@@ -142,6 +147,8 @@ input
 {
 	font-weight: bold;
 }
+
+
 
 /*div "Filtres"*/
 .filtres h1
@@ -245,6 +252,11 @@ h6
 	display: none;
 }
 
+em
+{
+	font-style: normal;
+}
+
 /*section "Hébergements" article*/
 #Hebergement
 {
@@ -293,19 +305,20 @@ span
 
 .resultat
 {
-	height: 75px;
+	height: 80px;
 	width: 210px;
 	border: 3px white solid;
 	border-bottom: 50px white solid;
+	background-color: white;
 	margin:25px 10px 5px 5px;
-	padding-bottom: 30px;
+	padding-bottom: 40px;
 	border-radius: 10px 10px 10px 10px;
 	box-shadow: 5px 5px 5px #d9d9d9;
 }
 
 #result
 {
-	height:100px; 
+	height:110px; 
     width:100%;
     object-fit: cover;
     border-radius: 10px 10px 0px 0px;
@@ -315,6 +328,8 @@ article em
 {
 	display: block;
 	padding-left: 10px;
+	padding-bottom: 5px;
+
 }
 
 article .fas
@@ -374,8 +389,27 @@ aside
 }
 
 .populaire em
-{
+{ 
 	float: right;
+	margin-left: 5px;
+}
+
+#eau
+{
+	position: relative;
+	right: 30px;
+}
+
+aside span
+{
+	position:relative;
+    top: 40px;
+}
+
+aside p
+{
+	position: relative;
+	top: -25px;
 }
 
 
@@ -435,7 +469,7 @@ aside
 .grande em
 {
 	position: relative;
-	bottom: 0px;
+	top: 10px;
 	left: 10px;
 }
 
@@ -460,7 +494,7 @@ aside
 .petite em
 {
 	position: relative;
-	bottom: 0px;
+	top: 10px;
 	left: 10px;
 }
 
@@ -485,7 +519,7 @@ aside
 .Fort em
 {
 	position: relative;
-	bottom: 0px;
+	top: 10px;
 	left: 10px;
 
 }
@@ -511,7 +545,7 @@ aside
 .Frioul em
 {
 	position: relative;
-	bottom: 0px;
+	top: 10px;
 	left: 10px;
 }
 
@@ -543,276 +577,279 @@ footer li
 
 /*fin de la partie Desktop*/
 
-/*début de la partie smartphone =>(max-width: 320px-600px)*/
-@media screen and (max-width: 600px)
+/*début de la partie smartphone =>(max-width: 320px-568px)*/
+@media screen and (min-width:320px) and (max-width: 568px)
 {
-	section
+	#bloc-page
 	{
-		flex-direction: column-reverse;
-		margin: 20px 20px 20px 20px;
+		vertical-align: middle;
 	}
+	/*ici commence mon header*/
+	header img
+	{
+		height: 70px;
+		position: relative;
+		bottom: -10px;
+	}
+	nav ul
+	{
+		width:100%;
+		display: flex;
+		flex-wrap: wrap-reverse;
+	}
+
+	nav a
+	{
+        font-size: 1.7em;
+	}
+
+	nav a:visited
+	{ 
+        font-weight: bold;
+        color: #0065FC;
+	}
+    
+    nav a:hover
+    {
+        color: #0065FC;
+        border-bottom: 2px #0065FC solid;
+    }
+
+    #lien1
+    {
+    	width: 50%;
+    	position: relative;
+    	left: -200px;
+    	border-bottom: 3px #F2F2F2 solid;
+    }
+
+    #lien2
+    {
+    	width: 50%;
+    	position: relative;
+    	left: -100px;
+    	border-bottom: 3px #F2F2F2 solid;
+    }
+
+    #lien3
+    {
+    	position: relative;
+    	left: 200px;
+    	border-bottom: 3px #F2F2F2 solid;
+
+    }
+
+    /*fin de mon header*/
+
+    /*premiere div trouver*/
+    .Trouver h2
+    {
+    	font-size: 2em;
+    }
+
+    .Trouver p
+    {
+    	font-size: 1.5em;
+    }
+
+    form
+    {
+    	width: 100%;
+    }
+
+    #ville
+    {
+        width: 60%;
+        border: 2px #F2F2F2 solid;
+    }
+
+    #Rechercher
+    {
+        width: 5%;
+        font-size: 0em;
+        border-radius: 10px 10px 10px 10px;
+        position: relative;
+        right: 10px;
+    }
+
+    label
+    {
+    	width: 25px;
+    	border-radius: 10px 0px 0px 10px;
+    	position: relative;
+    	left: 5px;
+    }
+
+    .Trouver .fa
+    {
+    	display: flex;
+    	position: relative;
+    	right: 37px;
+    	top: 12px;
+    	color: white;
+    }
+
+    .Trouver .fas
+    {
+    	position:relative;
+    	left: 10px;
+    }
+    /*fin div trouver*/
+    /*début seconde div filtres*/
+
+    .filtres
+    {
+    	height: auto;
+    	width: 70%;
+    	display: flex;
+    	flex-direction: column;
+    	justify-content: center;
+    	align-content: center;
+    }
+
+    /*fin div filtres*/
+
+    /*début de la section*/
+    section
+	{
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: center;
+		align-content: center;
+	}
+
+	/*début de l'aside*/
 	aside
 	{
-		display: flex;
-		flex-direction:column;
-		justify-content: space-around; 
-		width: 90%;
-		height: 550px;
-		background-color: #F2F2F2;
+		width: 100%;
+		border-radius: 0px 0px 0px 0px;
 	}
 
-	.soleil 
+	#graphique
 	{
-		width: 90%;
-		height: 150px;
-		margin: 10px 10px 10px 10px;
+		width: 100%;
 	}
 
-	#soleil 
+	#graph
 	{
-		width: 40%;
-		height: 100%;
+		position: relative;
+		right: 20px;
 	}
 
-	.soleil  em .fas
+	.populaire
 	{
-		float: left;
 	}
+	/*fin de l'aside*/
 
-	.coeur
-	{
-	    width: 90%;
-		height: 150px;
-		margin: 10px 10px 10px 10px;	
-	}
-
-	#eau
-	{
-		width: 40%;
-		height: 100%;
-	}
-
-	.coeur em .fas
-	{
-		float: left;
-	}
-
-	.tout
-	{
-		width: 90%;
-		height: 150px;
-		margin: 10px 10px 10px 10px;
-	}
-
-	#tout
-	{
-		width: 40%;
-		height: 100%;
-	}
-
-	.tout em .fas
-	{
-		float: left;
-	}
-
+	/*début de l'article*/
 	article
 	{
+		width: 100%;
+		background-color: white;
 		display: flex;
 		flex-direction: column;
-		justify-content: space-around;
+		justify-content: center;
+		align-content: center;
+	}
+
+	.resultat
+	{
 		width: 90%;
-		background-color: white;
 	}
 
-	.Cannebiere
+	#result
 	{
 		width: 100%;
-		height: 120px;
-		margin: 10px 10px 10px 10px;
-	}
-
-	#cannebiere
-	{
-		width: 100%;
-		height: 130px;
-
-	}
-
-	.Port
-	{
-		width:100%;
-		height: 120px;
-		margin: 10px 10px 10px 10px;
-	}
-
-	#port
-	{
-        width:100%;
-        height: 120px;
-	}
-
-	.Mouettes
-	{
-        width:100%;
-        height: 120px;
-        margin: 10px 10px 10px 10px;
-	}
-
-	#mouettes
-	{
-		width:100%;
-		height: 120px;
-	}
-
-	.la-mer
-	{
-		width:100%;
-		height: 120px;
-		margin: 10px 10px 10px 10px;
-	}
-
-	#mer
-	{
-		width:100%;
-		height: 120px;
-	}
-
-	.Panier
-	{
-		width:100%;
-		height: 120px;
-		margin: 10px 10px 10px 10px;
-	}
-
-	#panier
-	{
-		width:100%;
-		height: 120px;
-	}
-
-	.Amina
-	{
-		width:100%;
-		height: 120px;
-		margin: 10px 10px 10px 10px;
-	}
-
-	#amina
-	{
-		width:100%;
-		height: 120px;
 	}
 
 	#Afficher
 	{
-		margin: 10px 10px 10px 10px;
 		font-weight: bold;
 	}
 
+	/*fin de l'article*/
+	/*fin de la section*/
+
+	/*début de la section activités*/
 	#act
 	{
-		margin-left: 40px;
 	}
-
 	.actMarseille
 	{
+		width: 100%;
+		height: 1800px;
+		background-color: red;
 		display: flex;
 		flex-direction: column;
-		justify-content: space-around;
-		align-items: center;
-		width: 100%;
-		height: 1300px;
-		background-color: red;
+		justify-content: space-between;
+		align-content: center;
+	}
+
+	.grande
+	{
+	}
+
+	#big
+	{
+	}
+
+	.petite
+	{
+	}
+
+	#small
+	{
+
 	}
 
 	#premiere
 	{
-		display: flex;
-		flex-direction: column;
-		justify-content: space-around;
-		align-items: center;
 	}
 
 	#seconde
 	{
-		display: flex;
-		flex-direction: column;
-		justify-content: space-around;
-		align-items: center;
-	}
 
-	.Vieux
-	{
-		width:90%;
-		height: 120px;
-	}
-
-	#vieux
-	{
-		width:100%;
-		height: 120px;
 	}
 
 	.Fort
 	{
-		width:160%;
-		height: 120px;
 	}
 
 	#fort
 	{
-		width:100%;
-		height: 120px;
+
 	}
 
-	.iles
+	.Frioul
 	{
-		width:160%;
-		height: 120px;
 	}
 
 	#frioul
 	{
-		width:100%;
-		height: 120px;
+
 	}
 
-	.Parc
+	/*début du footer*/
+	footer
 	{
-		width:90%;
-		height: 120px;
+		width: 100%;
+		display: flex;
+		flex-direction: column;	
+		justify-content: center;
+		align-content: center;
+		text-align: left;
 	}
 
-	#parc
+	footer ul
+	{ 
+		width: 100%;
+		font-size: 1.2em;
+	}
+
+	footer h3
 	{
-		width:100%;
-		height: 120px;
 	}
-
-	.Notre
-	{
-		width:160%;
-		height: 120px;
-	}
-
-	#notre
-	{
-		width:100%;
-		height: 120px;
-	}
-
-	.Longchamp
-	{
-		width:160%;
-		height: 120px;
-	}
-
-	#longchamp
-	{
-		width:100%;
-		height: 120px;
-	}
-
+	/*fin du footer*/
 
 }
 /*fin de la partie iphone*/
