@@ -1,0 +1,369 @@
+@media screen and (min-width:320px) and (max-width: 568px)
+{
+	body
+	{
+		vertical-align: middle;
+	}
+	/*ici commence mon header*/
+	header
+	{
+		width: 100%;
+		height: 150px;
+		display: flex;
+		flex-direction: row;
+	}
+	header img
+	{
+		width: 30%;
+		height: 70px;
+		margin-left: 20px;
+	}
+	
+	nav ul
+	{
+		padding-left: 50px;
+		width: ;
+		height: 150px;
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	header nav a
+	{
+		font-size: 1.2em;
+	}
+
+	header nav a:visited
+	{ 
+        font-weight: bold;
+        color: #0065FC;
+	}
+    
+    header nav a:hover
+    {
+        color: #0065FC;
+        border-top: none;
+    }
+
+   header ul li
+    {
+    	border-bottom: 3px #F2F2F2 solid;
+    }
+
+    header ul li:hover
+    {
+    	border-bottom: 3px #0065FC solid;
+    }
+
+
+    /*fin de mon header*/
+
+    /*premiere div trouver*/
+    .Trouver
+    {
+    	margin-top:0px;
+    	margin-left: 0px;
+    }
+    .Trouver h2
+    {
+    	font-size: 2em;
+    }
+
+    .Trouver p
+    {
+    	font-size: 1.5em;
+    	margin-left: 0px;
+    }
+
+    form
+    {
+    	width: 100%;
+    }
+
+    #ville
+    {
+        width: 60%;
+        border: 2px #F2F2F2 solid;
+    }
+
+    #Rechercher
+    {
+        width: 5%;
+        font-size: 0em;
+        border-radius: 10px 10px 10px 10px;
+        position: relative;
+        right: 7px;
+    }
+
+    label
+    {
+    	width: 25px;
+    	border-radius: 10px 0px 0px 10px;
+    	position: relative;
+    	left: 5px;
+    }
+
+    .Trouver .fa
+    {
+    	display: flex;
+    	position: relative;
+    	right: 37px;
+    	top: 12px;
+    	color: white;
+
+    }
+    .Trouver .fas
+    {
+    	position:relative;
+    	left: 10px;
+    }
+    /*fin div trouver*/
+    /*début seconde div filtres*/
+
+    .filtres
+    {
+    	width:100%;
+    	display: flex;
+    	flex-direction: column;
+    	justify-content: flex-start;
+    	align-content: flex-start;
+    	height: 350px;
+    	margin-left: 0px;
+    }
+
+    .filtres h3
+    {
+    }
+
+    .filtres #filter
+    {
+    	height:250px;
+    	display: flex;
+    	flex-direction: column;
+    	flex-wrap: wrap;
+    	padding-left: 0px;
+    	padding-top: 0px;
+    	margin-top: 0px;
+    }
+
+    #filter li:nth-child(2)
+    {
+        order:4;
+    }
+
+    #filter li:nth-child(4)
+    {
+    	order:3;
+    }
+
+    #filter li:nth-child(3)
+    {
+    	order:2;
+    }
+    /*fin div filtres*/
+
+    p
+    {
+    	margin-top: 0px;
+    	padding-top: 0px;
+    	margin-left: 20px;
+    }
+
+
+    /*début de la section*/
+    section
+	{
+		width: 100%;
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: center;
+		align-content: center;
+	}
+
+	/*début de l'aside*/
+	aside
+	{
+		width: 100%;
+		border-radius: 0px 0px 0px 0px;
+		margin: 0px 0px 0px 0px;
+	}
+
+	#graphique
+	{
+		width: 100%;
+	}
+
+	#graph
+	{
+		position: relative;
+		right: 20px;
+	}
+
+	.populaire
+	{ 
+        margin:10px;
+	}
+
+	/*fin de l'aside*/
+
+	/*début de l'article*/
+	#Hébergement
+	{
+		margin-left: 20px;
+		margin-bottom: 0px;
+	}
+	article
+	{
+		width: 100%;
+		background-color: white;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-content: center;
+		margin-left: 20px;
+		padding-left: 0px;
+	}
+
+	.resultat
+	{
+		width: 90%;
+	}
+
+	.result
+	{
+		width: 100%;
+	}
+
+	#Afficher
+	{
+		font-weight: bold;
+		position: relative;
+		top:15px;
+		padding-bottom: 20px;
+	}
+
+	/*fin de l'article*/
+	/*fin de la section*/
+
+	/*début de la section activités*/
+	#act
+	{
+		margin-left: 30px;
+		margin-bottom: 0px;
+	}
+	.actMarseille
+	{
+		width: 100%;
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-content: center;
+		margin-left: 0px;
+		padding-left: 0px;
+		padding-top:0px;
+		padding-bottom:100px;
+	}
+
+	.grande
+	{
+		height: 130px;
+		width:90%;
+		margin-left: 30px;
+	}
+
+	.big
+	{
+		height: 130px;
+		width: 100%;
+	}
+
+	.petite
+	{
+	    height: 130px;
+		width: 100%;
+	}
+
+	.small
+	{
+		height: 130px;
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+	#premiere
+	{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-content: center;
+		margin-left: 30px;
+		margin-bottom: 90px;
+		width: 90%;
+		height: 300px;
+		margin-top: 10px;
+	}
+
+	#seconde
+	{
+		margin-left:30px;
+		width: 90%;
+		height: 300px;
+	}
+
+	.Fort
+	{
+		height: 130px;
+		width: 100%;
+	}
+
+	#fort
+	{
+		height: 130px;
+		width: 100%;
+
+	}
+
+	.Frioul
+	{
+		height: 130px;
+		width: 100%;
+		margin-top: 10px;
+	}
+
+	#frioul
+	{
+		height: 130px;
+		width: 100%;
+	}
+
+	/*début du footer*/
+	footer
+	{
+		width: 100%;
+		display: flex;
+		flex-direction: column;	
+		justify-content: center;
+		align-content: center;
+		text-align: left;
+		text-indent: -7em;
+		margin-right:20px;
+		padding-left: 100px;
+		padding-bottom: 50px;
+	}
+
+	footer ul
+	{ 
+		width: 100%;
+		font-size: 1.2em;
+		margin-bottom: 10px;
+	}
+
+	footer h3
+	{
+		margin-bottom: 5px;
+	}
+	/*fin du footer*/
+
+}
+/*fin de la partie iphone*/
