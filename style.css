@@ -15,15 +15,13 @@ body
 
 em
 {
-	font-weight: large;
+	font-size: 1em;
 }
 
 strong
 {
 	font-weight: bold;
 }
-
-
 
 /* Début de la version desktop 	min 1135px*/
 
@@ -47,10 +45,9 @@ a
 }
 
 nav ul 
-{
+{ 
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
 }
 
 nav li 
@@ -75,6 +72,7 @@ nav a:hover
 	border-top: 2px #0065FC solid;
 }
 
+
 /* logo reservia*/
 
 #reservia
@@ -87,7 +85,7 @@ nav a:hover
 }
 
 /*Div "trouver"*/
-.Trouver h2 
+.Trouver h2
 {  
      font-size: 1.5em;
      padding-left: 20px;
@@ -138,20 +136,13 @@ label
 	display:none;
 }
 
-h2
-{
-	font-size: 1.2em;
-}
-
 input
 {
 	font-weight: bold;
 }
 
-
-
 /*div "Filtres"*/
-.filtres h1
+.filtres h3
 {
 	font-size: 1.2em;
 	margin-top: 40px;
@@ -261,6 +252,7 @@ em
 #Hebergement
 {
 	margin-left: 20px;
+
 }
 
 article
@@ -275,7 +267,7 @@ article
 
 #Afficher
 {
-	position: auto;
+	position: relative;
 	margin-left: 10px;
 
 }
@@ -313,10 +305,10 @@ span
 	margin:25px 10px 5px 5px;
 	padding-bottom: 40px;
 	border-radius: 10px 10px 10px 10px;
-	box-shadow: 5px 5px 5px #d9d9d9;
+	box-shadow:0px 5px 5px 0px #F2F2F2;
 }
 
-#result
+.result
 {
 	height:110px; 
     width:100%;
@@ -380,7 +372,7 @@ aside
 	box-shadow: 5px 5px 5px #d9d9d9; 
 }
 
-#popular
+.popular
 {
 	height:100px; 
     width:100px;
@@ -390,29 +382,26 @@ aside
 
 .populaire em
 { 
-	float: right;
-	margin-left: 5px;
+    float: right;
 }
 
-#eau
+.eau
 {
 	position: relative;
-	right: 30px;
+	right: 32px;
+}
+
+.eau span
+{
+  position: relative;
+  top: 30px;  
 }
 
 aside span
 {
-	position:relative;
-    top: 40px;
-}
-
-aside p
-{
 	position: relative;
-	top: -25px;
+	top: 45px;
 }
-
-
 
 /*section"Activités"*/
 
@@ -443,8 +432,6 @@ aside p
 	display: flex;
 	flex-direction: column;
 	margin: 10px 10px 10px 10px;
-
-
 }
 
 .grande
@@ -457,7 +444,7 @@ aside p
 	box-shadow: 0px 5px 5px 0px #F2F2F2;
 }
 
-#big
+.big
 {
 	height:400px; 
     width:100%;
@@ -483,7 +470,7 @@ aside p
 	box-shadow: 0px 5px 5px 0px #F2F2F2;
 }
 
-#small
+.small
 {
 	height:165px; 
     width:100%;
@@ -578,281 +565,7 @@ footer li
 /*fin de la partie Desktop*/
 
 /*début de la partie smartphone =>(max-width: 320px-568px)*/
-@media screen and (min-width:320px) and (max-width: 568px)
-{
-	#bloc-page
-	{
-		vertical-align: middle;
-	}
-	/*ici commence mon header*/
-	header img
-	{
-		height: 70px;
-		position: relative;
-		bottom: -10px;
-	}
-	nav ul
-	{
-		width:100%;
-		display: flex;
-		flex-wrap: wrap-reverse;
-	}
 
-	nav a
-	{
-        font-size: 1.7em;
-	}
-
-	nav a:visited
-	{ 
-        font-weight: bold;
-        color: #0065FC;
-	}
-    
-    nav a:hover
-    {
-        color: #0065FC;
-        border-bottom: 2px #0065FC solid;
-    }
-
-    #lien1
-    {
-    	width: 50%;
-    	position: relative;
-    	left: -200px;
-    	border-bottom: 3px #F2F2F2 solid;
-    }
-
-    #lien2
-    {
-    	width: 50%;
-    	position: relative;
-    	left: -100px;
-    	border-bottom: 3px #F2F2F2 solid;
-    }
-
-    #lien3
-    {
-    	position: relative;
-    	left: 200px;
-    	border-bottom: 3px #F2F2F2 solid;
-
-    }
-
-    /*fin de mon header*/
-
-    /*premiere div trouver*/
-    .Trouver h2
-    {
-    	font-size: 2em;
-    }
-
-    .Trouver p
-    {
-    	font-size: 1.5em;
-    }
-
-    form
-    {
-    	width: 100%;
-    }
-
-    #ville
-    {
-        width: 60%;
-        border: 2px #F2F2F2 solid;
-    }
-
-    #Rechercher
-    {
-        width: 5%;
-        font-size: 0em;
-        border-radius: 10px 10px 10px 10px;
-        position: relative;
-        right: 10px;
-    }
-
-    label
-    {
-    	width: 25px;
-    	border-radius: 10px 0px 0px 10px;
-    	position: relative;
-    	left: 5px;
-    }
-
-    .Trouver .fa
-    {
-    	display: flex;
-    	position: relative;
-    	right: 37px;
-    	top: 12px;
-    	color: white;
-    }
-
-    .Trouver .fas
-    {
-    	position:relative;
-    	left: 10px;
-    }
-    /*fin div trouver*/
-    /*début seconde div filtres*/
-
-    .filtres
-    {
-    	height: auto;
-    	width: 70%;
-    	display: flex;
-    	flex-direction: column;
-    	justify-content: center;
-    	align-content: center;
-    }
-
-    /*fin div filtres*/
-
-    /*début de la section*/
-    section
-	{
-		display: flex;
-		flex-direction: column-reverse;
-		justify-content: center;
-		align-content: center;
-	}
-
-	/*début de l'aside*/
-	aside
-	{
-		width: 100%;
-		border-radius: 0px 0px 0px 0px;
-	}
-
-	#graphique
-	{
-		width: 100%;
-	}
-
-	#graph
-	{
-		position: relative;
-		right: 20px;
-	}
-
-	.populaire
-	{
-	}
-	/*fin de l'aside*/
-
-	/*début de l'article*/
-	article
-	{
-		width: 100%;
-		background-color: white;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-content: center;
-	}
-
-	.resultat
-	{
-		width: 90%;
-	}
-
-	#result
-	{
-		width: 100%;
-	}
-
-	#Afficher
-	{
-		font-weight: bold;
-	}
-
-	/*fin de l'article*/
-	/*fin de la section*/
-
-	/*début de la section activités*/
-	#act
-	{
-	}
-	.actMarseille
-	{
-		width: 100%;
-		height: 1800px;
-		background-color: red;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		align-content: center;
-	}
-
-	.grande
-	{
-	}
-
-	#big
-	{
-	}
-
-	.petite
-	{
-	}
-
-	#small
-	{
-
-	}
-
-	#premiere
-	{
-	}
-
-	#seconde
-	{
-
-	}
-
-	.Fort
-	{
-	}
-
-	#fort
-	{
-
-	}
-
-	.Frioul
-	{
-	}
-
-	#frioul
-	{
-
-	}
-
-	/*début du footer*/
-	footer
-	{
-		width: 100%;
-		display: flex;
-		flex-direction: column;	
-		justify-content: center;
-		align-content: center;
-		text-align: left;
-	}
-
-	footer ul
-	{ 
-		width: 100%;
-		font-size: 1.2em;
-	}
-
-	footer h3
-	{
-	}
-	/*fin du footer*/
-
-}
-/*fin de la partie iphone*/
 
 /*début de la partie tablette =>(min-width: 600px) and (max-width: 1024px)*/
 /*fin de la partie tablette*/
