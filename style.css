@@ -257,7 +257,7 @@ em
 
 article
 {
-	width: 75%;
+	width: 70%;
 	height:auto;
 	border-radius: 10px 10px 10px 10px;
 	padding:20px 20px 20px 20px ;
@@ -297,8 +297,8 @@ span
 
 .resultat
 {
-	height: 80px;
-	width: 210px;
+	height: 100px;
+	width: 30%;
 	border: 3px white solid;
 	border-bottom: 50px white solid;
 	background-color: white;
@@ -321,6 +321,8 @@ article em
 	display: block;
 	padding-left: 10px;
 	padding-bottom: 5px;
+	position: relative;
+	top:10px;
 
 }
 
