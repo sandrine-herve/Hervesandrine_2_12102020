@@ -28,9 +28,9 @@
                 <img src="..\Projet2-Reservia\images\reservia-3x.png" alt="Réservia">
                 <nav>
                     <ul>
-                        <li><a href="#Hébergement">Hébergements</a></li>
-                        <li><a href="#Activités">Activités</a></li>
-                        <li><a href="#">S'inscrire</a></li>
+                        <li class="hebergement"><a href="#Hébergement">Hébergements</a></li>
+                        <li class="activite"><a href="#Activités">Activités</a></li>
+                        <li class="inscrire"><a href="#">S'inscrire</a></li>
                     </ul>
                 </nav>
 
@@ -41,7 +41,7 @@
             <div class="Trouver">
                 <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
                 <p>En plein centre ville ou en pleine nature</p>
-                <form><label><i class="fas fa-map-marker-alt"></i></label><input type="text" id="ville" name="ville" value="Marseille, France">
+                <form><label><i class="fas fa-map-marker-alt"></i></label><input type="text" id="ville" name="ville" value="Marseille,France">
                 <input type="submit" id="Rechercher" name="Rechercher" value="Rechercher"><i class="fa fa-search" aria-hidden="true"></i></form>
 
             </div>
@@ -51,15 +51,15 @@
             <div class="filtres">
                 <h3>Filtres</h3> 
                 <ul id="filter">
-                    <li><div class="money"><i class="fas fa-money-bill-wave" id="billet"></i><a href="#">Economique</a></div></li>
-                    <li><div class="familial"><i class="fas fa-child" id="enfant"></i><a href="#">Familial</a></div></li>
-                    <li><div class="romantique"><i class="fas fa-heart" id="coeur"></i><a href="#">Romantique</a></div></li>   
-                    <li><div class="animaux"><i class="fas fa-dog" id="chien"></i><a href="#">Animaux autorisés</a></div></li> 
+                    <li class="money"><div><i class="fas fa-money-bill-wave" id="billet"></i><a href="#">Economique</a></div></li>
+                    <li class="familial"><div><i class="fas fa-child" id="enfant"></i><a href="#">Familial</a></div></li>
+                    <li class="romantique"><div><i class="fas fa-heart" id="coeur"></i><a href="#">Romantique</a></div></li>   
+                    <li class="animaux"><div><i class="fas fa-dog" id="chien"></i><a href="#">Animaux autorisés</a></div></li> 
                 </ul>
             </div>
                 
                 
-            <br><p><i class="fa fa-info-circle" aria-hidden="true"></i> Plus de 500 logements sont disponibles dans cette ville.</p>
+            <br><p id="p"><i class="fa fa-info-circle" aria-hidden="true"></i> Plus de 500 logements sont disponibles dans cette ville.</p>
 
         <!--ici commence ma première section "Hébergement" il y aura une partie <article> et <aside>-->
 

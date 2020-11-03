@@ -6,27 +6,58 @@
 	}
 	/*ici commence mon header*/
 	header
-	{
+	{ 
 		width: 100%;
-		height: 150px;
 		display: flex;
 		flex-direction: row;
+		justify-content: space-between;
+
 	}
+
 	header img
 	{
-		width: 30%;
-		height: 70px;
-		margin-left: 20px;
+        width: 50%;
+        height: 50px;
+        margin-left: 20px;
+        padding-top: 15px;
 	}
 	
 	nav ul
 	{
-		padding-left: 50px;
-		width: ;
-		height: 150px;
-		display: flex;
-		flex-direction: column-reverse;
-	}
+		width:100%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hebergement
+    {
+    	position: relative;
+    	right: 210px;
+    	bottom: 51px;
+    	padding-bottom: 10px;
+    	margin-bottom: 0px;
+    	padding-left: 20px;
+    	padding-right: 5px;
+    }
+
+    .activite
+    {
+    	position: relative;
+    	right:42px;
+    	padding-bottom: 10px;
+    	margin-bottom: 0px;
+    	padding-left: 40px;
+    	padding-right: 30px;
+    }
+
+    .inscrire
+    {
+    	padding-bottom: 10px;
+    	position: relative;
+    	right: 20px;
+    }
 
 	header nav a
 	{
@@ -61,6 +92,7 @@
     /*premiere div trouver*/
     .Trouver
     {
+    	
     	margin-top:0px;
     	margin-left: 0px;
     }
@@ -78,17 +110,20 @@
     form
     {
     	width: 100%;
+    	margin-left: 0px;
+    	padding-left: 5px;
+    	padding-right: 0px;
     }
 
     #ville
     {
-        width: 60%;
+        width: 150%;
         border: 2px #F2F2F2 solid;
     }
 
     #Rechercher
     {
-        width: 5%;
+        width: 15%;
         font-size: 0em;
         border-radius: 10px 10px 10px 10px;
         position: relative;
@@ -97,7 +132,7 @@
 
     label
     {
-    	width: 25px;
+    	width: 15%;
     	border-radius: 10px 0px 0px 10px;
     	position: relative;
     	left: 5px;
@@ -128,22 +163,29 @@
     	justify-content: flex-start;
     	align-content: flex-start;
     	height: 350px;
-    	margin-left: 0px;
-    }
-
-    .filtres h3
-    {
+    	margin-left:0px;
+    	padding-bottom: 0px;
+    	margin-bottom: 0px;
     }
 
     .filtres #filter
     {
-    	height:250px;
-    	display: flex;
+    	height:150px;
+    	width: 100%;
+    	display:flex;
     	flex-direction: column;
     	flex-wrap: wrap;
-    	padding-left: 0px;
-    	padding-top: 0px;
-    	margin-top: 0px;
+    	margin-left: 0px;
+    	margin-right: 0px;
+    	margin-bottom: 0px;
+    	padding-left:0px;
+    	padding-right:0px;
+    	padding-bottom: 0px;
+    }
+
+    #filter li
+    {
+    	margin:auto;
     }
 
     #filter li:nth-child(2)
@@ -160,12 +202,37 @@
     {
     	order:2;
     }
+
+    .money
+    {
+    	position: relative;
+    	right: 10px;
+    }
+
+    .romantique
+    {
+    	position: relative;
+    	right:15px;
+    }
+
+    .animaux
+    { 
+    	position: relative;
+    	left: 5px;
+    }
+
+    .familial
+    {
+    	position: relative;
+    	bottom: 50px;
+    }
     /*fin div filtres*/
 
-    p
+    #p
     {
-    	margin-top: 0px;
-    	padding-top: 0px;
+    	margin:auto;
+    	padding: 0px;
+
     	margin-left: 20px;
     }
 
@@ -268,7 +335,7 @@
 	.grande
 	{
 		height: 130px;
-		width:90%;
+		width:92%;
 		margin-left: 30px;
 	}
 
@@ -299,7 +366,7 @@
 		align-content: center;
 		margin-left: 30px;
 		margin-bottom: 90px;
-		width: 90%;
+		width: 92%;
 		height: 300px;
 		margin-top: 10px;
 	}
@@ -307,7 +374,7 @@
 	#seconde
 	{
 		margin-left:30px;
-		width: 90%;
+		width: 92%;
 		height: 300px;
 	}
 
@@ -348,8 +415,9 @@
 		text-align: left;
 		text-indent: -7em;
 		margin-right:20px;
+		margin-bottom: 0px;
 		padding-left: 100px;
-		padding-bottom: 50px;
+		padding-bottom: 0px;
 	}
 
 	footer ul
