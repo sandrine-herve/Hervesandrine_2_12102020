@@ -3,7 +3,15 @@
 	body
 	{
 		vertical-align: middle;
+		margin: 0px;
+		padding: 0px;
 	}
+
+	ul 
+	{
+		margin: 0px;
+	}
+
 	/*ici commence mon header*/
 	header
 	{ 
@@ -29,13 +37,14 @@
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
+        font-size: 1.2em;
     }
 
     .hebergement
     {
     	position: relative;
     	right: 210px;
-    	bottom: 51px;
+    	bottom: 54px;
     	padding-bottom: 10px;
     	margin-bottom: 0px;
     	padding-left: 20px;
@@ -93,12 +102,16 @@
     .Trouver
     {
     	
-    	margin-top:0px;
+    	margin-top:-5px;
     	margin-left: 0px;
     }
     .Trouver h2
     {
     	font-size: 2em;
+    	margin-top: 0px;
+    	margin-bottom: 0px;
+    	padding-top: 0px;
+    	padding-bottom: 0px;
     }
 
     .Trouver p
@@ -166,6 +179,7 @@
     	margin-left:0px;
     	padding-bottom: 0px;
     	margin-bottom: 0px;
+    	font-size: 1.1em;
     }
 
     .filtres #filter
@@ -175,12 +189,8 @@
     	display:flex;
     	flex-direction: column;
     	flex-wrap: wrap;
+    	padding-left: 0px;
     	margin-left: 0px;
-    	margin-right: 0px;
-    	margin-bottom: 0px;
-    	padding-left:0px;
-    	padding-right:0px;
-    	padding-bottom: 0px;
     }
 
     #filter li
@@ -213,27 +223,31 @@
     {
     	position: relative;
     	right:15px;
+    	top: 25px;
     }
 
     .animaux
     { 
     	position: relative;
     	left: 5px;
+    	top: 50px;
     }
 
     .familial
     {
     	position: relative;
     	bottom: 50px;
+    	right: 10px;
     }
     /*fin div filtres*/
 
     #p
     {
-    	margin:auto;
+    	position: relative;
+    	bottom: 20px;
     	padding: 0px;
-
     	margin-left: 20px;
+    	font-size: 1.2em;
     }
 
 
@@ -268,7 +282,7 @@
 
 	.populaire
 	{ 
-        margin:10px;
+        margin:15px;
 	}
 
 	/*fin de l'aside*/
@@ -281,7 +295,7 @@
 	}
 	article
 	{
-		width: 100%;
+		width: 90%;
 		background-color: white;
 		display: flex;
 		flex-direction: column;
@@ -320,7 +334,7 @@
 	}
 	.actMarseille
 	{
-		width: 100%;
+		width: 90%;
 		height: auto;
 		display: flex;
 		flex-direction: column;
