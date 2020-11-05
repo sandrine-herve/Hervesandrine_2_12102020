@@ -1,10 +1,17 @@
 @media screen and (min-width:320px) and (max-width: 568px)
 {
-	body
+	html body
 	{
 		vertical-align: middle;
+		width: 100%;
 		margin: 0px;
 		padding: 0px;
+	}
+
+	#bloc-page
+	{
+		vertical-align: middle;
+		width: auto;
 	}
 
 	ul 
@@ -19,30 +26,27 @@
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
-		margin: 0px;
-		padding: 0px;
 	}
 
 	header img
 	{
-        width: 100px;
-        height: 50px;
-        margin-left: 20px;
-        padding-top: 20px;
-	}
+        width: 20%;
+        height: 60px;
+    }
 
 	header nav ul
 	{
-	    padding-left: 0px;
-	    float: right; 
-		width:30%;
+	    float: right;
 		height: 150px;
 		display: flex;
 		flex-direction: column-reverse;
 		flex-wrap: wrap-reverse;
-		margin:0px;
-		padding: 0px;
 		font-size: 1.2em;
+	}
+
+	header nav
+	{
+		width: 0%;
 	}
 
 	header li:nth-child(1)
@@ -60,21 +64,22 @@
 		order:2;
 	}
 
+	.inscrire
+	{
+	}
+
 	.hebergement
 	{
 		position: relative;
 		right:10px;
-		-left: 10px;
+		left: 10px;
 		padding-right: 0px;
 		padding-left: 50px;
-		margin-right: 0px;
+
 	}
 
 	.activite
 	{
-		padding-right: 35px;
-		padding-left: 20px;
-		margin-left: 0px;
 		position: relative;
 		right:10px;
 	}
@@ -112,31 +117,19 @@
     /*premiere div trouver*/
     .Trouver
     {
-    	
-    	margin-top:-5px;
-    	margin-left: 0px;
     }
     .Trouver h2
     {
-    	font-size: 2em;
-    	margin-top: 0px;
-    	margin-bottom: 0px;
-    	padding-top: 0px;
-    	padding-bottom: 0px;
     }
 
     .Trouver p
     {
     	font-size: 1.5em;
-    	margin-left: 0px;
     }
 
     form
     {
-    	width: 100%;
-    	margin-left: 0px;
     	padding-left: 5px;
-    	padding-right: 0px;
     }
 
     #ville
@@ -147,7 +140,7 @@
 
     #Rechercher
     {
-        width: 15%;
+        width: ;
         font-size: 0em;
         border-radius: 10px 10px 10px 10px;
         position: relative;
@@ -156,7 +149,6 @@
 
     label
     {
-    	width: 15%;
     	border-radius: 10px 0px 0px 10px;
     	position: relative;
     	left: 5px;
@@ -169,44 +161,51 @@
     	right: 37px;
     	top: 12px;
     	color: white;
-
     }
+
     .Trouver .fas
     {
     	position:relative;
-    	left: 10px;
+    	left: 5px;
     }
     /*fin div trouver*/
     /*début seconde div filtres*/
 
     .filtres
     {
-    	width:100%;
+    	width: 100%;
+    	height: 250px;
+    	display: flex;
+    	flex-direction: column;
+    	justify-content: flex-start;
+    }
+
+    #filter
+    {
+    	margin: 0px;
+    	padding:0px;
+    	width: 100%;
+    	height: 150px;
     	display: flex;
     	flex-direction: column;
     	justify-content: flex-start;
     	align-content: flex-start;
-    	height: 350px;
-    	margin-left:0px;
-    	padding-bottom: 0px;
-    	margin-bottom: 0px;
-    	font-size: 1.1em;
-    }
-
-    .filtres #filter
-    {
-    	height:150px;
-    	width: 100%;
-    	display:flex;
-    	flex-direction: column;
     	flex-wrap: wrap;
-    	padding-left: 0px;
-    	margin-left: 0px;
     }
 
     #filter li
     {
-    	margin:auto;
+    	margin: 0px;
+    	padding: 0px;
+    	padding-right: 5px;
+    	margin-top: 8px;
+    	margin-left: 8px;
+    }
+
+    .filtres h3
+    {
+    	padding: 0px;
+    	margin: 0px;
     }
 
     #filter li:nth-child(2)
@@ -224,41 +223,13 @@
     	order:2;
     }
 
-    .money
-    {
-    	position: relative;
-    	right: 10px;
-    }
-
-    .romantique
-    {
-    	position: relative;
-    	right:15px;
-    	top: 25px;
-    }
-
-    .animaux
-    { 
-    	position: relative;
-    	left: 5px;
-    	top: 50px;
-    }
-
-    .familial
-    {
-    	position: relative;
-    	bottom: 50px;
-    	right: 10px;
-    }
+    
     /*fin div filtres*/
 
     #p
     {
-    	position: relative;
-    	bottom: 20px;
+    	margin: 0px;
     	padding: 0px;
-    	margin-left: 20px;
-    	font-size: 1.2em;
     }
 
 
@@ -275,25 +246,32 @@
 	/*début de l'aside*/
 	aside
 	{
+		margin: 0px;
+		padding: 0px;
+		width:100%;
+		border-radius: 0px;
+	}
+
+	#art
+	{
 		width: 100%;
-		border-radius: 0px 0px 0px 0px;
-		margin: 0px 0px 0px 0px;
 	}
 
 	#graphique
 	{
-		width: 100%;
+		width:100%;
+		margin: 0px;
+		padding: 0px;
 	}
 
 	#graph
 	{
 		position: relative;
-		right: 20px;
+		right:20px;
 	}
 
 	.populaire
 	{ 
-        margin:15px;
 	}
 
 	/*fin de l'aside*/
@@ -301,24 +279,19 @@
 	/*début de l'article*/
 	#Hébergement
 	{
-		margin-left: 20px;
-		margin-bottom: 0px;
 	}
 	article
 	{
-		width: 90%;
+		margin: 0px;
+		padding: 0px;
+		width:100%;
 		background-color: white;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-content: center;
-		margin-left: 20px;
-		padding-left: 0px;
+		border-radius: 0px;
 	}
 
 	.resultat
 	{
-		width: 90%;
+		width: 100%;
 	}
 
 	.result
@@ -331,37 +304,36 @@
 		font-weight: bold;
 		position: relative;
 		top:15px;
-		padding-bottom: 20px;
+
 	}
 
 	/*fin de l'article*/
 	/*fin de la section*/
 
 	/*début de la section activités*/
+
 	#act
 	{
-		margin-left: 30px;
-		margin-bottom: 0px;
+		margin-top: 20px;
 	}
 	.actMarseille
 	{
-		width: 90%;
-		height: auto;
+
+		margin: 0px;
+		margin-bottom: 100px;
+		padding: 0px;
+		width: 100%;
+		height: 1000px;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-content: center;
-		margin-left: 0px;
-		padding-left: 0px;
-		padding-top:0px;
-		padding-bottom:100px;
 	}
 
 	.grande
 	{
 		height: 130px;
 		width:92%;
-		margin-left: 30px;
 	}
 
 	.big
@@ -380,7 +352,6 @@
 	{
 		height: 130px;
 		width: 100%;
-		margin-bottom: 10px;
 	}
 
 	#premiere
@@ -389,8 +360,6 @@
 		flex-direction: column;
 		justify-content: space-between;
 		align-content: center;
-		margin-left: 30px;
-		margin-bottom: 90px;
 		width: 92%;
 		height: 300px;
 		margin-top: 10px;
@@ -398,7 +367,6 @@
 
 	#seconde
 	{
-		margin-left:30px;
 		width: 92%;
 		height: 300px;
 	}
@@ -432,30 +400,36 @@
 	/*début du footer*/
 	footer
 	{
-		width: 100%;
+		margin: 0px;
+		padding: 0px;
+		width:100%;
 		display: flex;
-		flex-direction: column;	
-		justify-content: center;
-		align-content: center;
-		text-align: left;
-		text-indent: -7em;
-		margin-right:20px;
-		margin-bottom: 0px;
-		padding-left: 100px;
-		padding-bottom: 0px;
+		flex-direction: column;
 	}
 
 	footer ul
-	{ 
+	{
+		margin: 0px;
+		padding: 0px;
 		width: 100%;
 		font-size: 1.2em;
-		margin-bottom: 10px;
+		text-indent:3em;
 	}
 
-	footer h3
+	footer div h3 a
 	{
-		margin-bottom: 5px;
+		margin: 0px;
+		padding: 0px;
+		width:100%;
 	}
+
+	footer li
+	{
+		padding: 0px;
+		margin: 0px;
+	}
+
+	
 	/*fin du footer*/
 
 }
