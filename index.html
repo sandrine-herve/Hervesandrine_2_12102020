@@ -4,10 +4,10 @@
 
     <head>
         <meta charset="utf-8"> 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0,">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" media="screen" type="text/css" href="style.css">
         <link rel="stylesheet" media="screen and (min-width:320px) and (max-width: 568px)" type="text/css" href="design_tel.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" media="screen and (min-width:568px) and (max-width: 1135px)" type="text/css" href="design_tab.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/v4-shims.css">
         <link rel="stylesheet" href="(https://necolas.github.io/normalize.css/8.0.1/normalize.css)" >
@@ -41,8 +41,11 @@
             <div class="Trouver">
                 <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
                 <p>En plein centre ville ou en pleine nature</p>
-                <form><label><i class="fas fa-map-marker-alt"></i></label><input type="text" id="ville" name="ville" value="Marseille,France">
-                <input type="submit" id="Rechercher" name="Rechercher" value="Rechercher"><i class="fa fa-search" aria-hidden="true"></i></form>
+                <form>
+                	<label><i class="fas fa-map-marker-alt"></i></label>
+                	<input type="text" id="ville" name="ville" value="Marseille,France">
+                    <input type="submit" id="Rechercher" name="Rechercher" value="Rechercher"><i class="fa fa-search" aria-hidden="true"></i>
+                </form>
 
             </div>
 
@@ -57,9 +60,7 @@
                     <li class="animaux"><div><i class="fas fa-dog" id="chien"></i><a href="#">Animaux autorisés</a></div></li> 
                 </ul>
             </div>
-                
-                
-            <br><p id="p"><i class="fa fa-info-circle" aria-hidden="true"></i> Plus de 500 logements sont disponibles dans cette ville.</p>
+            <p id="p"><i class="fa fa-info-circle" aria-hidden="true"></i> Plus de 500 logements sont disponibles dans cette ville.</p>
 
         <!--ici commence ma première section "Hébergement" il y aura une partie <article> et <aside>-->
 
