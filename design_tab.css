@@ -57,7 +57,7 @@
 		padding: 0px;
 	}
 /*ici début de mon article*/
-	article
+	#art
 	{
 		width: 100%;
 		height: 800px;
@@ -72,11 +72,6 @@
 	{
 		width: 80%;
 		padding-bottom: 20px;
-
-	}
-
-	#art
-	{
 
 	}
 
@@ -95,8 +90,8 @@
 
 	#Afficher
 	{
-		font-weight: bold;
 	}
+
 /*icic de mon aside*/
 
 	aside
