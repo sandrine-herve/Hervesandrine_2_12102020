@@ -18,14 +18,16 @@
 
     <body>
         
-        <div id="bloc-page">
+       
 
             <!--ici commence mon header-->
 
             <header>
 
                 <!-- ici il y aura mon titre RESERVIA et une partie nav "hebergements" "activitées" " s'inscrire" -->
-                <img src="photos/reservia-3x.png" alt="Réservia">
+
+                <img src="photos/Reservia@3x.png" alt="Réservia">
+
                 <nav>
                     <ul>
                         <li class="hebergement"><a href="#Hébergement">Hébergements</a></li>
@@ -43,7 +45,7 @@
                 <p>En plein centre ville ou en pleine nature</p>
                 <form>
                 	<label><i class="fas fa-map-marker-alt"></i></label>
-                	<input type="text" id="ville" name="ville" value="Marseille,France">
+                	<input type="text" id="ville" name="ville" placeholder="Rechercher">
                     <input type="submit" id="Rechercher" name="Rechercher" value="Rechercher"><i class="fa fa-search" aria-hidden="true"></i>
                 </form>
 
@@ -65,14 +67,13 @@
         <!--ici commence ma première section "Hébergement" il y aura une partie <article> et <aside>-->
 
             <section>
-                <h6>Les Résultats</h6>
+                <h2 id="Hébergement">Hébergements à Marseille</h2>
+                <div class="section1">
                 <article>
-                     <h2 id="Hébergement">Hébergements à Marseille</h2>
                 
-                   <!--premiere photo-->
                    <div id="art">
-                   <div class="resultat"><a href="#"><img src="photos/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge de la Cannebière" class="result"><em><strong>Auberge la Cannebière</strong><br>Nuit à partir de 25€<br><span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
-                    <span class="grise"><i class="fas fa-star"></i></span></em></a>
+
+                   <div class="resultat"><a href="#"><img src="photos/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge de la Cannebière" class="result"><em><strong>Auberge la Cannebière</strong><br>Nuit à partir de 25€<br><span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span><span class="grise"><i class="fas fa-star"></i></span></em></a>
                    </div>
 
                    <!-- deuxième photo-->
@@ -113,7 +114,7 @@
 
 
                     <!--première photo-->
-                    <div class="populaire"><a href="#"><img src="photos/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin" class="popular"><em><strong> Hôtel Le soleil du matin</strong><br>Nuit à partir de 128€<br><span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span> </em></a>
+                    <div class="populaire"><a href="#"><img src="photos/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin" class="popular"><em class="soleil"><strong> Hôtel Le soleil du matin</strong><br>Nuit à partir de 128€<br><span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span> </em></a>
                     </div>
 
                     <!--deuxième photo-->
@@ -121,9 +122,10 @@
                     </div>
 
                     <!--troisième photo-->
-                    <div class="populaire"><a href="#"><img src="photos/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel tout bleu et blanc" class="popular"><em><strong>Hôtel tout bleu et blanc</strong><br>Nuit à partir de 68€<br><span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span><span class="grise"><i class="fas fa-star"></i></span></em> </a>
+                    <div class="populaire"><a href="#"><img src="photos/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel tout bleu et blanc" class="popular"><em class="bleu"><strong>Hôtel tout bleu et blanc</strong><br>Nuit à partir de 68€<br><span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span><span class="grise"><i class="fas fa-star"></i></span></em> </a>
                     </div>
                 </aside>
+            </div>
             </section>
 
             <!--ici fin de ma première section "Hébergements"-->
@@ -131,10 +133,10 @@
 
 
             <!--ici commence ma seconde section "activités"-->
-            <h2 id="act">Activités à Marseille</h2>
+        
 
             <section id="Activités">
-                <h6>none</h6>
+                <h2 id="act">Activités à Marseille</h2>
 
             <div class="actMarseille">
 
@@ -193,7 +195,6 @@
                 </div>
             </footer>
 
-        </div> 
 
 
     </body>

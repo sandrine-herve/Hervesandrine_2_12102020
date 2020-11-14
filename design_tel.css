@@ -1,29 +1,17 @@
 @media screen and (min-width:320px) and (max-width: 568px)
 {
-	html body
-	{
-		vertical-align: middle;
-		width: 100%;
-		margin: 0px;
-		padding: 0px;
-	}
-
-	#bloc-page
-	{
-		vertical-align: middle;
-		width: auto;
-	}
 
 	ul 
 	{
 		margin: 0px;
+		width: 0px;
 	}
 
 	/*ici commence mon header*/
 	header
-	{ 
-		width: 100%;
-		display: flex;
+	{
+	    width:100%; 
+	    display: flex;
 		flex-direction: row;
 		justify-content: space-between;
 	}
@@ -114,10 +102,16 @@
     /*fin de mon header*/
 
     /*premiere div trouver*/
+    .Trouver
+    {
+    	padding-top: 50px;
+    	padding-bottom: 20px;
+    }
 
     .Trouver p
     {
     	font-size: 1.2em;
+    	padding-bottom: 10px;
     }
 
     form
@@ -143,7 +137,7 @@
 
     label
     {
-    	padding-top: 8px;
+    	padding-top: 6px;
     	width: 50px;
     	border-radius: 10px 0px 0px 10px;
     	position: relative;
@@ -154,7 +148,7 @@
     {
     	display: flex;
     	position: relative;
-    	right: 37px;
+    	right: 34px;
     	top: 12px;
     	color: white;
     }
@@ -162,7 +156,7 @@
     .Trouver .fas
     {
     	position:relative;
-    	left: 5px;
+    	left: 8px;
     }
     /*fin div trouver*/
     /*début seconde div filtres*/
@@ -181,7 +175,7 @@
     	margin: 0px;
     	padding:0px;
     	width: 100%;
-    	height: 150px;
+    	height: 190px;
     	display: flex;
     	flex-direction: column;
     	justify-content: flex-start;
@@ -195,7 +189,19 @@
     	padding: 0px;
     	padding-right: 8px;
     	margin-top: 8px;
-    	margin-left: 8px;
+    	margin-left: 5px;
+    }
+
+    .animaux
+    {
+    	padding-right: 0px;
+    	margin-right: 0px;
+    }
+
+    .familial
+    {
+    	padding-right: 0px;
+    	margin-right: 0px;
     }
 
     .filtres h3
@@ -220,23 +226,30 @@
     {
     	order:2;
     }
-
+ 
     
     /*fin div filtres*/
 
     #p
     {
     	position:relative;
-    	bottom: 30px;
+    	bottom: 10px;
     	margin: 0px;
     	padding: 0px;
-    	padding-left: 10px;
-    	padding-right: 10px;
+    	padding-left: 5px;
     }
 
 
     /*début de la section*/
     section
+    {
+    	display: flex;
+    	flex-direction: column;
+    	width: 100%;
+    	margin:0px;
+    	padding:0px;
+    }
+    .section1
 	{
 		width: 100%;
 		display: flex;
@@ -266,6 +279,8 @@
 		width:100%;
 		margin: 0px;
 		padding: 0px;
+		position: relative;
+		top:10px;
 	}
 
 	#graph
@@ -276,11 +291,28 @@
 
 	.populaire
 	{
+		width:90%;
 		position: relative;
 		top:20px;
 	    padding: 0px;
 	    margin-top: 10px;
 	    margin-bottom: 10px; 
+	}
+
+	.popular
+	{
+		width:40%;
+	}
+
+	aside em
+	{
+	   position: relative;
+	   left: 1px;
+	}
+
+	.eau
+	{
+		padding-right: 27px;
 	}
 
 	/*fin de l'aside*/
@@ -290,8 +322,9 @@
 	{
 		width: 80%;
 		position: relative;
-		left: 20px;
-	}
+		top: 590px;
+    }
+
 	article
 	{
 		margin: 0px;
@@ -308,7 +341,7 @@
 
 	.resultat
 	{
-		width: 100%;
+		width: 98%;
 	}
 
 	.result
@@ -320,7 +353,7 @@
 	{
 		font-weight: bold;
 		position: relative;
-		top:5px;
+		top:50px;
 		margin-bottom: 20px;
 
 	}
@@ -335,14 +368,14 @@
 		width: 80%;
 		position: relative;
 		left: 20px;
-		top: 30px;
+		top: 870px;
 		margin:0px;
 	}
 	.actMarseille
-	{
-
+	{ 
 		margin: 0px;
 		padding: 0px;
+		padding-top:850px;
 		width: 100%;
 		height: 1200px;
 		display: flex;
