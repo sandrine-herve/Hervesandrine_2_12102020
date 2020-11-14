@@ -277,7 +277,11 @@
 	.populaire
 	{
 		position: relative;
+<<<<<<< HEAD
 		top: 20px;
+=======
+		top:20px;
+>>>>>>> feature/main
 	    padding: 0px;
 	    margin-top: 10px;
 	    margin-bottom: 10px; 
