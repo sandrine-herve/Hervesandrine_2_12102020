@@ -145,6 +145,14 @@ input
 	font-weight: bold;
 }
 
+input::placeholder
+{
+	color:black;
+}
+
+
+
+
 /*div "Filtres"*/
 .filtres h3
 {
