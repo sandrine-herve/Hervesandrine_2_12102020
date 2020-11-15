@@ -106,7 +106,7 @@
 
 	#graphique
 	{
-		width: 80%;
+		width: 50%;
 		margin:0px;
 		padding: 0px;
 		position: relative;
@@ -126,7 +126,19 @@
 	.populaire em 
 	{
 		font-size: 1.3em;
-	
+		position: relative;
+		right: 120px;
+	}
+
+	.eau 
+	{
+		padding-right: 40px;
+	}
+
+	.eau span
+	{
+		position:relative;
+		top: 50px;
 	}
 
 	.popular
@@ -134,6 +146,8 @@
 		width: 40%;
 		height: 150px;
 	}
+
+
 
 	aside span
 	{
