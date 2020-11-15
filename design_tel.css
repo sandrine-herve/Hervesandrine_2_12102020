@@ -292,7 +292,7 @@
 
 	.populaire
 	{
-		width:90%;
+		width:85%;
 		position: relative;
 		top:20px;
 	    padding: 0px;
@@ -307,13 +307,14 @@
 
 	aside em
 	{
-	   position: relative;
-	   left: 1px;
+		position: relative;
+		left: 1px;
+		padding-right: 4px;
 	}
 
 	.eau
 	{
-		padding-right: 27px;
+		padding-right: 35px;
 	}
 
 	/*fin de l'aside*/
